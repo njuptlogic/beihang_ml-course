@@ -1,0 +1,20 @@
+{
+  "weights": "facebook/PE-Core-T16-384",
+  "revision": "8b4722741a516c18e7d311f158f13c600fea6c78",
+  "sha256": "868f89f066b7c1ae51add02d2cb7b925fd051076282773f2ec3c71359fbdaf3b",
+  "code_commit": "3e352cca660658d4b5c90f42a7808b11469e4c66",
+  "size": [
+    512,
+    288
+  ],
+  "blocks": [
+    6,
+    11
+  ],
+  "retained": [
+    0.8978955675103845,
+    0.793338633486398
+  ],
+  "fit_images": 1360,
+  "patches_per_fit": 24
+}

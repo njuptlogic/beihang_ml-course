@@ -1,0 +1,16 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "split_seed": 42,
+  "epochs": 20,
+  "decay": 0.995,
+  "batch_size": 128,
+  "python": "3.11.18",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+}

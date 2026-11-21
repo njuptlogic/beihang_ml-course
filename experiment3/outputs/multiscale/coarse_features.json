@@ -1,0 +1,19 @@
+{
+  "sha256": "f433177089a681826f849f194ece3bb48f4d63fb38d32fc837e3dc7a4e5641fb",
+  "size": [
+    224,
+    126
+  ],
+  "blocks": [
+    6,
+    12
+  ],
+  "basis": "frozen previous fit-only 448x252 PCA weights",
+  "dimensions": [
+    2000,
+    128,
+    9,
+    16
+  ],
+  "dtype": "float16"
+}

@@ -1,0 +1,11 @@
+{
+  "arm": "model_guidance",
+  "cfg": 2.5,
+  "steps": 12,
+  "alpha": 0.4,
+  "budget": 24,
+  "scenario": "model_guidance_n12_w2.5_a0.4",
+  "train_pfd": 45.18159642524148,
+  "train_probe_agreement": 0.8441666666666666,
+  "checkpoint_sha256": "a3fb874ca1d2c160905dc11d79c8b06992428fa6f761cf25ee00433b7c86a407"
+}

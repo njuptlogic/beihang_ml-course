@@ -1,0 +1,12 @@
+{
+  "source": "time",
+  "source_pixels_sha256": "8bb1f17f093bd5edf3f8a27b328f5f98fc721e04e6934acfc69215c31fce7607",
+  "backbone": "DINOv2-S/14-reg4",
+  "backbone_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "weights_sha256": "f433177089a681826f849f194ece3bb48f4d63fb38d32fc837e3dc7a4e5641fb",
+  "resize": 224,
+  "representation": "final CLS",
+  "interpolation": "bicubic, align_corners=False, antialias=True, clamp to [0,1]",
+  "amp": "fp16",
+  "n": 10000
+}

@@ -1,0 +1,12 @@
+{
+  "method": "short_4",
+  "learned_coefficients_sha256": "21f4ddfd568993ed02d82a88094c2731ddde00281880ca9699ca2f5a30e3ce86",
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 4,
+  "selected": false,
+  "generation_batch": 50,
+  "target_protocol_sha256": "c26aa2959c7aae1dfd8bbe532fbce2d9ac0dfd41ba8232d61a4d13241d18ec02"
+}

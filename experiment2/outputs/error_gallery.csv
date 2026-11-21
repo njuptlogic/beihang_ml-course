@@ -1,0 +1,9 @@
+member,kind,score,width,height
+2-MedImage-TestSet/normal/normal_093329.jpg,False positive,0.9999993443489075,793,793
+2-MedImage-TestSet/normal/normal_093399.jpg,False positive,0.9999992847442627,818,817
+2-MedImage-TestSet/normal/normal_093153.jpg,False positive,0.9999988675117493,838,837
+2-MedImage-TestSet/normal/normal_093587.jpg,False positive,0.9999983906745911,896,896
+2-MedImage-TestSet/disease/disease_002656.jpg,False negative,0.010015693493187428,2193,2192
+2-MedImage-TestSet/disease/disease_002355.jpg,False negative,0.10694953799247742,2193,2192
+2-MedImage-TestSet/disease/disease_002709.jpg,False negative,0.11230822652578354,1040,1071
+2-MedImage-TestSet/disease/disease_002476.jpg,False negative,0.25463974475860596,2193,2192

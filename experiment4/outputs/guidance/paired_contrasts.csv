@@ -1,0 +1,6 @@
+contrast,previous,selected,n,gained,lost,delta,lo,hi
+8-eval momentum,model_guidance_n4_w1.75_a0,model_guidance_n4_w1.75_a0.9,10000,949,784,0.0165,0.008697499999999997,0.024902499999999987
+24-eval momentum,control_n12_w3.5_a0,control_n12_w3.5_a0.4,10000,471,631,-0.016,-0.0224,-0.009597500000000014
+Posterior target; single branch,control_n24_w1_a0,model_guidance_n24_w1_a0,10000,3565,252,0.3313,0.32119749999999997,0.3412
+Posterior target; matched CFG,control_n12_w3.5_a0,model_guidance_n12_w3.5_a0,10000,1364,640,0.0724,0.0639,0.0809
+Posterior target; comparable training FLOPs,compute_control_n24_w1_a0,model_guidance_n24_w1_a0,10000,3538,244,0.3294,0.31930000000000003,0.3391025

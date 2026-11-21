@@ -1,0 +1,40 @@
+{
+  "raw_image_weight_checks": [
+    {
+      "index": 0,
+      "member": "2-MedImage-TrainSet/disease/disease_000005.jpg",
+      "max_abs_error": 5.960464477539063e-08
+    },
+    {
+      "index": 821,
+      "member": "2-MedImage-TrainSet/normal/normal_014545.jpg",
+      "max_abs_error": 1.4551915228366852e-11
+    },
+    {
+      "index": 1639,
+      "member": "2-MedImage-TestSet/disease/disease_002322.jpg",
+      "max_abs_error": 0.0
+    },
+    {
+      "index": 1888,
+      "member": "2-MedImage-TestSet/normal/normal_115818.jpg",
+      "max_abs_error": 0.00010663270950317383
+    }
+  ],
+  "recomputed_test": {
+    "accuracy": 0.72,
+    "auc": 0.6909000000000001,
+    "ap": 0.49330606324227555,
+    "sensitivity": 0.94,
+    "specificity": 0.5733333333333334,
+    "precision": 0.5949367088607594,
+    "f1": 0.7286821705426356,
+    "balanced_accuracy": 0.7566666666666666,
+    "brier": 0.26815566958524917,
+    "tp": 94,
+    "fp": 64,
+    "tn": 86,
+    "fn": 6
+  },
+  "device": "cuda"
+}

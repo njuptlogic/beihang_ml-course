@@ -1,0 +1,17 @@
+{
+  "arm": "align",
+  "epochs": 12,
+  "batch": 128,
+  "seed": 812,
+  "base_epochs": 20,
+  "parent_sha256": "45b0a5c75ac525da2cd516ecbce1c8b5da43be27ff9380a53314a40f276cc4d5",
+  "time_law": "uniform",
+  "learning_rate": 0.00022,
+  "minimum_lr": 8e-05,
+  "align_weight": 0.12,
+  "mask_tokens": 4,
+  "ema": 0.995,
+  "drop_label": 0.12,
+  "parameters_generator": 673532,
+  "parameters_adapter": 89344
+}

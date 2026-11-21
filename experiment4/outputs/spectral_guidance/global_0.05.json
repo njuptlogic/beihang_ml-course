@@ -1,0 +1,8 @@
+{
+  "name": "global_0.05",
+  "strength": 0.05,
+  "kind": "global",
+  "train_fd": 38.173494217365715,
+  "agreement": 0.801875,
+  "log_power_mse": 0.3599381446838379
+}

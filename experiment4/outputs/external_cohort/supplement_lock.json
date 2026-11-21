@@ -1,0 +1,18 @@
+{
+  "relationship": "later, separately locked paired comparison; not a member of the four-model primary table",
+  "selected": "global_0.35",
+  "base": "model_guidance_n4_w1.75_a0.9",
+  "strength": 0.35,
+  "selection_sha256": "1f4fdd89d195a14c470d683dffefa4a4ff26408f391ea450ac1353898521b0a8",
+  "train_protocol_sha256": "23ea728ff999a1a5ac0bd3c90db21a93dd8090c4b9da340d92d969a69233af4d",
+  "primary_models_sha256": "e34d4478217527161ad9c48bb739be3650834abf266b349e43f8ed679748db9e",
+  "indices_sha256": "9be2b776bae0766e4e9a01d27f86978b227f7ffec73715e4c6f542a08ee3fd54",
+  "bootstrap_sha256": "a0172fe3811c54ea978434a870d9955324364e7aec4e2e837e58211b27a65c06",
+  "generator_features": "outputs/spectral_guidance/test/features.npy",
+  "contrast": "spectral8 minus quality8",
+  "endpoints": [
+    "original",
+    "external"
+  ],
+  "conditioning": "same references, generator partitions, paired class-resamples, fixed checkpoints as primary"
+}

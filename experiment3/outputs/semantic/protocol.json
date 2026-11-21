@@ -1,0 +1,31 @@
+{
+  "variants": [
+    "tokens",
+    "tokens_local",
+    "tokens_routed",
+    "tokens_local_routed"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "epochs": 16,
+  "grid": [
+    24,
+    40
+  ],
+  "learning_rate": 0.0012,
+  "min_lr": 8e-05,
+  "batch": 32,
+  "dropout": 0.12,
+  "category_prior_weight": 0.85,
+  "blend_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "selection": "Highest validation CC over equal-weight three-seed variant ensembles and old/new probability mixtures; ties keep source order."
+}

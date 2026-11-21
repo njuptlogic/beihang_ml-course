@@ -1,0 +1,4 @@
+index,member,case,delta_cc
+1835,3-Saliency-TestSet/Stimuli/Noisy/159.jpg,largest gain,0.11686182022094727
+1933,3-Saliency-TestSet/Stimuli/Random/139.jpg,median change,0.007485091686248779
+1982,3-Saliency-TestSet/Stimuli/Social/029.jpg,largest loss,-0.0690808892250061

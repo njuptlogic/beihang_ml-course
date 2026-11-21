@@ -1,0 +1,23 @@
+{
+  "feature": "retina_triple",
+  "selection": "largest equal-fold mean AUROC",
+  "threshold_source": "Youden on grouped fit-only out-of-fold scores",
+  "width_band_pixels": 32,
+  "fit_images": 1393,
+  "folds": 4,
+  "positive": "disease",
+  "views": [
+    "retina_field",
+    "retina_crop",
+    "retina_balanced_crop"
+  ],
+  "classifiers": [
+    "linear",
+    "rbf"
+  ],
+  "penalties": [
+    0.1,
+    1.0,
+    10.0
+  ]
+}

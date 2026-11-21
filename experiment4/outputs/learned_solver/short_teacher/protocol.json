@@ -1,0 +1,13 @@
+{
+  "teacher": "provided 32-epoch time model, 12 Euler calls, guidance 3",
+  "fit_seed": 72101,
+  "validation_seed": 72102,
+  "budgets": [
+    2,
+    4
+  ],
+  "family": "bands",
+  "check": "paired MSE to 12-step Euler target",
+  "compare_to": "matched 48-call midpoint target; two-band design unchanged",
+  "chronology": "follow-up to four-step trajectory fit; fixed family and budgets before its 10k scoring"
+}

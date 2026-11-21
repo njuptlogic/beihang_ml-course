@@ -1,0 +1,11 @@
+{
+  "design": "all_regions",
+  "selection_sha256": "c9bdd1bc2e75b1e655332f25014a1327aad783398cb6b6d455810d28f9cf5eaa",
+  "policy": "primary uses weighted Youden; equal cost maximizes average of pooled accuracy and equal-fold mean accuracy; other two use the named empirical OOF class quantile",
+  "thresholds": {
+    "balanced_primary": 0.6515161774025646,
+    "equal_cost": 0.5247540218055705,
+    "sensitivity_90": 0.28948213752552476,
+    "specificity_90": 0.5635497659465668
+  }
+}

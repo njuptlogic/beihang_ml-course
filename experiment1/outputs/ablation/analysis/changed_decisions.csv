@@ -1,0 +1,47 @@
+filename,truth,baseline,selected,change
+TestSet/1_180.bmp,1,5,1,Corrected
+TestSet/2_1023.bmp,2,8,2,Corrected
+TestSet/2_73.bmp,2,6,2,Corrected
+TestSet/2_75.bmp,2,1,2,Corrected
+TestSet/3_39.bmp,3,5,3,Corrected
+TestSet/4_269.bmp,4,9,4,Corrected
+TestSet/5_117.bmp,5,7,5,Corrected
+TestSet/5_434.bmp,5,9,5,Corrected
+TestSet/6_175.bmp,6,5,6,Corrected
+TestSet/6_192.bmp,6,1,6,Corrected
+TestSet/6_321.bmp,6,0,6,Corrected
+TestSet/6_329.bmp,6,4,6,Corrected
+TestSet/6_35.bmp,6,0,6,Corrected
+TestSet/6_422.bmp,6,0,6,Corrected
+TestSet/6_87.bmp,6,5,6,Corrected
+TestSet/7_398.bmp,7,2,7,Corrected
+TestSet/7_412.bmp,7,1,7,Corrected
+TestSet/8_179.bmp,8,3,8,Corrected
+TestSet/8_277.bmp,8,0,8,Corrected
+TestSet/8_355.bmp,8,9,8,Corrected
+TestSet/9_130.bmp,9,7,9,Corrected
+TestSet/9_202.bmp,9,8,9,Corrected
+TestSet/9_219.bmp,9,4,9,Corrected
+TestSet/9_287.bmp,9,5,9,Corrected
+TestSet/9_980.bmp,9,7,9,Corrected
+TestSet/0_240.bmp,0,0,8,New error
+TestSet/0_417.bmp,0,0,6,New error
+TestSet/0_964.bmp,0,0,6,New error
+TestSet/1_251.bmp,1,1,3,New error
+TestSet/1_485.bmp,1,1,7,New error
+TestSet/1_774.bmp,1,1,6,New error
+TestSet/1_947.bmp,1,1,6,New error
+TestSet/2_998.bmp,2,2,7,New error
+TestSet/3_100.bmp,3,3,5,New error
+TestSet/4_375.bmp,4,4,8,New error
+TestSet/5_125.bmp,5,5,3,New error
+TestSet/5_61.bmp,5,5,3,New error
+TestSet/6_102.bmp,6,6,5,New error
+TestSet/6_356.bmp,6,6,8,New error
+TestSet/6_438.bmp,6,6,1,New error
+TestSet/6_614.bmp,6,6,5,New error
+TestSet/6_925.bmp,6,6,1,New error
+TestSet/6_927.bmp,6,6,1,New error
+TestSet/7_577.bmp,7,7,2,New error
+TestSet/9_231.bmp,9,9,4,New error
+TestSet/9_428.bmp,9,9,5,New error

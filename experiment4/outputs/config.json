@@ -1,0 +1,10 @@
+{
+  "epochs": 20,
+  "batch": 128,
+  "seed": 42,
+  "n_parameters": 673532,
+  "lr": 0.0007,
+  "ema": 0.995,
+  "label_dropout": 0.12,
+  "snapshot_seed": 719
+}

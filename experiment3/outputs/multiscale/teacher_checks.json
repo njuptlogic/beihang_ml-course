@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "index": 37,
+      "model": "selected",
+      "teacher_max_abs_error": 1.9788982980051273e-08
+    },
+    {
+      "index": 37,
+      "model": "unisal_native",
+      "teacher_max_abs_error": 3.620125279546471e-07
+    },
+    {
+      "index": 1200,
+      "model": "selected",
+      "teacher_max_abs_error": 1.1692526674655923e-07
+    },
+    {
+      "index": 1200,
+      "model": "unisal_native",
+      "teacher_max_abs_error": 1.1316095275382132e-05
+    },
+    {
+      "index": 1600,
+      "model": "selected",
+      "teacher_max_abs_error": 1.1800531463102004e-07
+    },
+    {
+      "index": 1600,
+      "model": "unisal_native",
+      "teacher_max_abs_error": 1.5278745624236478e-07
+    },
+    {
+      "index": 1999,
+      "model": "selected",
+      "teacher_max_abs_error": 3.7358369397999525e-08
+    },
+    {
+      "index": 1999,
+      "model": "unisal_native",
+      "teacher_max_abs_error": 4.671540054790313e-08
+    }
+  ],
+  "previous_replay_max_error": 2.980232238769531e-07
+}

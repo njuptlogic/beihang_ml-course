@@ -1,0 +1,19 @@
+{
+  "arm": "compute_control",
+  "cfg": 1.0,
+  "steps": 24,
+  "alpha": 0.0,
+  "budget": 24,
+  "scenario": "compute_control_n24_w1_a0",
+  "checkpoint_sha256": "50aaceec8168f6f93079b8762c1d6fd9ef3158f3f8d730402fea896bbde1d2db",
+  "inception_score_mean": 4.732874493425059,
+  "inception_score_std": 0.1053833863656959,
+  "kernel_inception_distance_mean": 0.05407791137695313,
+  "kernel_inception_distance_std": 0.00159230694752863,
+  "noise_seed": 109,
+  "samples": 10000,
+  "sample_seconds": 54.979237793999346,
+  "fid_test": 68.09641245709423,
+  "fid_train": 67.4451002541777,
+  "agreement": 0.3266
+}

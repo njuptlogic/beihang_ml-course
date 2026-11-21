@@ -1,0 +1,21 @@
+{
+  "extractor": "torch-fidelity 0.3.0 inception-v3-compat, raw uint8 NCHW, 2048 pooled FP32",
+  "feature_sha256": "cca8335be197b4ab0be7ccacc23076dfc28ca315df2e32689254159cefe2ab14",
+  "device": "cuda",
+  "batch_size": 10,
+  "feature_shape": [
+    2000,
+    2048
+  ],
+  "external_unique_pixels": 2000,
+  "exact_rgb_overlap_with_original": {
+    "train": 0,
+    "test": 0
+  },
+  "original_test_reencoding": {
+    "n": 24,
+    "max_abs_error": 0.0002067089080810547,
+    "mean_abs_error": 4.183651071798522e-06,
+    "min_cosine": 0.9999998211860657
+  }
+}

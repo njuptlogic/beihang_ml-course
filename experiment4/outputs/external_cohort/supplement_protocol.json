@@ -1,0 +1,6 @@
+{
+  "main_protocol_sha256": "1b9e2b316f8f029ef9eee75a6d42c4a3e153103e13f667db7b38470fe82dcdd9",
+  "followup_lock_sha256": "f0cef15aa4f89dd3cf72c66cb5e357fd36c114058daa824c0c039f2d852b7f3f",
+  "corrected_feature_sha256": "988b4f57cb7f51cfb9b234ca1ec47a65aed44b5b5e7b0beb6a18bfe87f3e9f73",
+  "baseline_bootstrap": "Quality8 draws reused verbatim from bootstrap.npz; spectral8 uses the matching stratified counts for every draw."
+}

@@ -1,0 +1,11 @@
+{
+  "n": 10000,
+  "backbone": "DINOv2-S/14-reg4",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "weights_sha256": "f433177089a681826f849f194ece3bb48f4d63fb38d32fc837e3dc7a4e5641fb",
+  "source_pixels_sha256": "c554d2834f0e49f0728990a30a66d0332d7c5bd1e2dd0310d9a4b0b462629d66",
+  "resize": 224,
+  "representation": "final CLS",
+  "interpolation": "bicubic, align_corners=False, antialias=True, clamp to [0,1]",
+  "amp": "fp16"
+}

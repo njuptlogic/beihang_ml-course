@@ -1,0 +1,18 @@
+{
+  "selected": {
+    "name": "global_0.35",
+    "strength": 0.35,
+    "kind": "global",
+    "train_fd": 36.64506301797394,
+    "agreement": 0.803125,
+    "log_power_mse": 0.1196952685713768
+  },
+  "best_corrected": {
+    "name": "global_0.35",
+    "strength": 0.35,
+    "kind": "global",
+    "train_fd": 36.64506301797394,
+    "agreement": 0.803125,
+    "log_power_mse": 0.1196952685713768
+  }
+}

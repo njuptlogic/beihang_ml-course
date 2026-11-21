@@ -1,0 +1,74 @@
+[
+  {
+    "index": 50,
+    "member": "2-MedImage-TrainSet/disease/disease_000198.jpg",
+    "error": 3.3306690738754696e-16,
+    "probability": 0.8433301500471976,
+    "threshold": 0.6515161774025646,
+    "prediction": "disease",
+    "center": [
+      0.5885416865348816,
+      0.3802083432674408
+    ]
+  },
+  {
+    "index": 457,
+    "member": "2-MedImage-TrainSet/disease/disease_001682.jpg",
+    "error": 0.0,
+    "probability": 0.9950932813882517,
+    "threshold": 0.6515161774025646,
+    "prediction": "disease",
+    "center": [
+      0.171875,
+      0.515625
+    ]
+  },
+  {
+    "index": 1260,
+    "member": "2-MedImage-TrainSet/normal/normal_053207.jpg",
+    "error": 1.5612511283791264e-17,
+    "probability": 0.004360394503681417,
+    "threshold": 0.6515161774025646,
+    "prediction": "normal",
+    "center": [
+      0.328125,
+      0.4322916567325592
+    ]
+  },
+  {
+    "index": 1650,
+    "member": "2-MedImage-TestSet/disease/disease_002372.jpg",
+    "error": 0.0,
+    "probability": 0.988597831005266,
+    "threshold": 0.6515161774025646,
+    "prediction": "disease",
+    "center": [
+      0.1302083283662796,
+      0.421875
+    ]
+  },
+  {
+    "index": 1790,
+    "member": "2-MedImage-TestSet/normal/normal_094700.jpg",
+    "error": 2.220446049250313e-16,
+    "probability": 0.9596225517074186,
+    "threshold": 0.6515161774025646,
+    "prediction": "disease",
+    "center": [
+      0.4010416567325592,
+      0.453125
+    ]
+  },
+  {
+    "index": 1870,
+    "member": "2-MedImage-TestSet/normal/normal_108824.jpg",
+    "error": 2.2551405187698492e-17,
+    "probability": 0.014123448350546196,
+    "threshold": 0.6515161774025646,
+    "prediction": "normal",
+    "center": [
+      0.3385416567325592,
+      0.390625
+    ]
+  }
+]

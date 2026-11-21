@@ -1,0 +1,55 @@
+{
+  "encoder": "DINOv2-S/14-reg4",
+  "roi": "42% of the short edge, centred on the local bright-region contrast maximum",
+  "fit": "original fit split only; four fixed width-blocked folds",
+  "ranks": [
+    0,
+    4,
+    12
+  ],
+  "ridge": [
+    0.05,
+    0.5,
+    5.0
+  ],
+  "selection": "equal average of mean held-fold AUROC and harmonic-support-weighted within-width AUROC (both labels >=2)",
+  "threshold": "maximum weighted Youden on grouped out-of-fold decisions, 50% ordinary class balance + 50% within-width overlap",
+  "designs": {
+    "field": [
+      "field"
+    ],
+    "local": [
+      "local"
+    ],
+    "balanced": [
+      "balanced"
+    ],
+    "annulus": [
+      "annulus"
+    ],
+    "local_balanced": [
+      "local",
+      "balanced"
+    ],
+    "global_local": [
+      "field",
+      "local"
+    ],
+    "all_views": [
+      "field",
+      "local",
+      "balanced"
+    ],
+    "all_regions": [
+      "field",
+      "local",
+      "balanced",
+      "annulus"
+    ]
+  },
+  "weights": [
+    "balanced_class",
+    "width_overlap"
+  ],
+  "comparator": "second retinal encoder, same design, projection, ridge and training weights as the source-selected natural encoder"
+}

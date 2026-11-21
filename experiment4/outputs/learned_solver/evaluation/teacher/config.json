@@ -1,0 +1,11 @@
+{
+  "method": "teacher",
+  "learned_coefficients_sha256": null,
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 48,
+  "selected": false,
+  "generation_batch": 50
+}

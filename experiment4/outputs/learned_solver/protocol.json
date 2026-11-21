@@ -1,0 +1,33 @@
+{
+  "parent": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+  "epoch": 32,
+  "guidance": 3.0,
+  "teacher": "midpoint",
+  "teacher_steps": 24,
+  "teacher_network_calls": 48,
+  "synthetic_splits": {
+    "fit": [
+      1200,
+      72101
+    ],
+    "validation": [
+      400,
+      72102
+    ]
+  },
+  "budgets": [
+    2,
+    4,
+    8
+  ],
+  "families": [
+    "euler",
+    "history",
+    "bands"
+  ],
+  "ridge": 0.0001,
+  "input_noise": "independent CPU standard normal; condition = row % 10",
+  "primary_budget": 4,
+  "selection": "lowest mean final clipped-image MSE vs midpoint on validation at each fixed budget",
+  "evaluation": "paired seed 109; 10k balanced class conditions vs all 10k CIFAR-10 test images"
+}

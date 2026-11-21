@@ -1,0 +1,11 @@
+{
+  "arm": "parent",
+  "cfg": 3.0,
+  "steps": 4,
+  "alpha": 0,
+  "budget": 8,
+  "scenario": "parent_n4_w3_a0",
+  "train_pfd": 54.69858985597,
+  "train_probe_agreement": 0.69,
+  "checkpoint_sha256": "1d7ebf819add1f70f0aa7528ef79b20b4f247ced8afdf24f52e3b275226830a8"
+}

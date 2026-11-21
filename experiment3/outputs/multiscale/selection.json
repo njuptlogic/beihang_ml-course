@@ -1,0 +1,14 @@
+{
+  "anchor": "unisal",
+  "anchor_weight": 0.1,
+  "cc": 0.9020521640777588,
+  "kl": 0.24066764116287231,
+  "sim": 0.7615460753440857,
+  "weights": {
+    "dino_selected": 0.9,
+    "unisal": 0.1
+  },
+  "selection_split": "validation",
+  "metric": "CC",
+  "pretrained_external_checkpoint": "original UNISAL weights_best, SALICON branch"
+}

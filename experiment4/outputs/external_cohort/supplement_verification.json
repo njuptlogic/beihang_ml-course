@@ -1,0 +1,24 @@
+{
+  "reference_checks": [
+    {
+      "model": "spectral8",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.01779317855834961,
+      "absolute_error": 4.400991038266966e-08
+    },
+    {
+      "model": "spectral8",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.017088890075683594,
+      "absolute_error": 2.540913170978598e-07
+    }
+  ],
+  "duplicate_resampling_error": 1.7778873451224086e-07,
+  "paired_intervals_recomputed": 2,
+  "source_counts": 10000,
+  "reference_count": 2000
+}

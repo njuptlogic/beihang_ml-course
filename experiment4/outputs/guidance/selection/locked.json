@@ -1,0 +1,17 @@
+{
+  "nfe8_quality": "model_guidance_n4_w1.75_a0.9",
+  "nfe8_condition": "model_guidance_n4_w2.5_a0.9",
+  "nfe8_control_single": "control_n8_w1_a0.4",
+  "nfe8_model_guidance_single": "model_guidance_n8_w1_a0.4",
+  "nfe8_momentum_off": "model_guidance_n4_w1.75_a0",
+  "nfe24_quality": "control_n12_w3.5_a0.4",
+  "nfe24_condition": "model_guidance_n12_w2.5_a0.4",
+  "nfe24_control_single": "control_n24_w1_a0",
+  "nfe24_model_guidance_single": "model_guidance_n24_w1_a0",
+  "nfe24_momentum_off": "control_n12_w3.5_a0",
+  "matched_parent_cfg": "parent_n12_w3_a0",
+  "matched_control_cfg": "control_n12_w3.5_a0",
+  "single_raw_control": "control_n24_w1_a0",
+  "matched_model_guidance_cfg": "model_guidance_n12_w3.5_a0",
+  "single_raw_model_guidance": "model_guidance_n24_w1_a0"
+}

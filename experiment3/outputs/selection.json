@@ -1,0 +1,8 @@
+{
+  "variant": "multiscale_prior",
+  "seeds": [
+    17,
+    42,
+    73
+  ]
+}

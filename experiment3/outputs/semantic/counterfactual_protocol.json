@@ -1,0 +1,15 @@
+{
+  "variant": "tokens_local_routed",
+  "seed": 840,
+  "replaced": [
+    "both DINO token maps",
+    "ResNet stage-2 grid",
+    "image-routed prior"
+  ],
+  "donors": "one cyclic derangement per official test category",
+  "models": [
+    17,
+    42,
+    73
+  ]
+}

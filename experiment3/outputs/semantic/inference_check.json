@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "member": "3-Saliency-TrainSet/Stimuli/Action/001.jpg",
+    "total_variation": 0.00018259846547152847,
+    "probability_sum": 1.0000003576278687
+  },
+  {
+    "index": 819,
+    "member": "3-Saliency-TrainSet/Stimuli/LowResolution/047.jpg",
+    "total_variation": 0.00017859914805740118,
+    "probability_sum": 0.9999998211860657
+  },
+  {
+    "index": 1600,
+    "member": "3-Saliency-TestSet/Stimuli/Action/009.jpg",
+    "total_variation": 0.00018963718321174383,
+    "probability_sum": 1.0000003576278687
+  },
+  {
+    "index": 1999,
+    "member": "3-Saliency-TestSet/Stimuli/Social/199.jpg",
+    "total_variation": 0.00017934200877789408,
+    "probability_sum": 0.9999998807907104
+  }
+]

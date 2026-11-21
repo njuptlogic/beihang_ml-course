@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "member": "2-MedImage-TrainSet/disease/disease_000005.jpg",
+    "abs_error": 0.00010456485651355596,
+    "prediction": "disease"
+  },
+  {
+    "index": 821,
+    "member": "2-MedImage-TrainSet/normal/normal_014545.jpg",
+    "abs_error": 0.0003795421575688296,
+    "prediction": "normal"
+  },
+  {
+    "index": 1639,
+    "member": "2-MedImage-TestSet/disease/disease_002322.jpg",
+    "abs_error": 0.0006668493554080612,
+    "prediction": "disease"
+  },
+  {
+    "index": 1888,
+    "member": "2-MedImage-TestSet/normal/normal_115818.jpg",
+    "abs_error": 0.00020688424182270515,
+    "prediction": "normal"
+  }
+]

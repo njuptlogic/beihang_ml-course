@@ -1,0 +1,18 @@
+{
+  "method": "bands_2",
+  "learned_coefficients_sha256": "7adc3cfcdc75b1cf273e70626863e2c24ffc311a66fce3e757ce2cfe038ce0aa",
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 2,
+  "selected": true,
+  "generation_batch": 50,
+  "fid_train": 122.8620150891187,
+  "fid_test": 123.72234556511563,
+  "kernel_inception_distance_mean": 0.10470500946044922,
+  "kernel_inception_distance_std": 0.002239334633389349,
+  "inception_score_mean": 4.095492831535372,
+  "inception_score_std": 0.11325547390643652,
+  "agreement": 0.4003
+}

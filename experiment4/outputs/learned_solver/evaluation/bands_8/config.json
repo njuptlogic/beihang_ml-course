@@ -1,0 +1,11 @@
+{
+  "method": "bands_8",
+  "learned_coefficients_sha256": "f1b26d128f1ace4ff91ca0ba32b7c87675ece4b1653e7a26182b0deb9f509623",
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 8,
+  "selected": true,
+  "generation_batch": 50
+}

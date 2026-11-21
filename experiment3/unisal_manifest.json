@@ -1,0 +1,46 @@
+{
+  "LICENSE": {
+    "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "size": 11357
+  },
+  "training_runs/pretrained_unisal/SALICONDataset.json": {
+    "sha": "b635a7d8887dfea6532e0cc6d42ef2de0ecf3d96",
+    "size": 185
+  },
+  "training_runs/pretrained_unisal/Trainer.json": {
+    "sha": "9a44fa9eece238d825d26359d27596a496c29dc6",
+    "size": 891
+  },
+  "training_runs/pretrained_unisal/UNISAL.json": {
+    "sha": "6fcd17709d948557b3dbf0b7d84c53bfcf7bd6ff",
+    "size": 692
+  },
+  "training_runs/pretrained_unisal/weights_best.pth": {
+    "sha": "f06b52c56405bbf11b40cf1b4307573aa4035bea",
+    "size": 15368928
+  },
+  "unisal/__init__.py": {
+    "sha": "45d1627a9f338ca588f75c198e8ba95733d80d7a",
+    "size": 48
+  },
+  "unisal/model.py": {
+    "sha": "3137f5942b45170ac8463deb3ddad15b43ab7708",
+    "size": 19751
+  },
+  "unisal/models/MobileNetV2.py": {
+    "sha": "8e87c1681eaa40925ffecf9711cbe46c5e756b32",
+    "size": 7531
+  },
+  "unisal/models/__init__.py": {
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0
+  },
+  "unisal/models/cgru.py": {
+    "sha": "128dd26098974e7207546221c20a9c67e557fcaa",
+    "size": 15825
+  },
+  "unisal/utils.py": {
+    "sha": "c245244e8bbee80bc0f9f10fd42e2f6ff52d6675",
+    "size": 6124
+  }
+}

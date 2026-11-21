@@ -1,0 +1,22 @@
+{
+  "scores": {
+    "plain": {
+      "accuracy": 0.9945,
+      "loss": 0.03458260345458984
+    },
+    "plain_ema": {
+      "accuracy": 0.9946666666666667,
+      "loss": 0.03385699717203776
+    },
+    "affine": {
+      "accuracy": 0.9943333333333333,
+      "loss": 0.02378203328450521
+    },
+    "affine_ema": {
+      "accuracy": 0.9943333333333333,
+      "loss": 0.022765235900878908
+    }
+  },
+  "winner": "plain_ema",
+  "representative_seed": 42
+}

@@ -1,0 +1,9 @@
+category,case,test_reference_row,generator,generated_sample,distance_over_radius
+Bird,gained,2011,control,2682,1.0125171251335763
+Bird,gained,2011,combined,5412,0.9748356781258473
+Cat,gained,0,control,5403,1.0008810144432136
+Cat,gained,0,combined,5403,0.9988913446340891
+Ship,missed,1,control,2438,1.082011031048462
+Ship,missed,1,combined,2438,1.0776381883479924
+Truck,missed,11,control,6569,1.3030976569960318
+Truck,missed,11,combined,8919,1.3410697372104694

@@ -1,0 +1,88 @@
+{
+  "reference_checks": [
+    {
+      "model": "time32",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.0319826602935791,
+      "absolute_error": 1.4954667504341046e-07
+    },
+    {
+      "model": "time32",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.03159046173095703,
+      "absolute_error": 1.3623910033455644e-07
+    },
+    {
+      "model": "extended44",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.043565988540649414,
+      "absolute_error": 3.6902548361528176e-07
+    },
+    {
+      "model": "extended44",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.039016008377075195,
+      "absolute_error": 4.2786001741568214e-07
+    },
+    {
+      "model": "quality8",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.01847386360168457,
+      "absolute_error": 1.05785777693157e-07
+    },
+    {
+      "model": "quality8",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.01889348030090332,
+      "absolute_error": 2.6538422237543102e-08
+    },
+    {
+      "model": "quality24",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.025223493576049805,
+      "absolute_error": 2.307723674377371e-07
+    },
+    {
+      "model": "quality24",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.025383472442626953,
+      "absolute_error": 1.5022811528098146e-07
+    },
+    {
+      "model": "train_real",
+      "reference": "original",
+      "n": 2000,
+      "block": 0,
+      "official_kid": -1.049041748046875e-05,
+      "absolute_error": 4.23860121445685e-08
+    },
+    {
+      "model": "train_real",
+      "reference": "external",
+      "n": 2000,
+      "block": 0,
+      "official_kid": 0.0013568401336669922,
+      "absolute_error": 1.631914952060498e-07
+    }
+  ],
+  "duplicate_resampling_error": 1.7778873451224086e-07,
+  "paired_intervals_recomputed": 15,
+  "source_counts": 10000,
+  "reference_count": 2000
+}

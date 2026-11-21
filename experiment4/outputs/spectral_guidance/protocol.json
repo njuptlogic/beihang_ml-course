@@ -1,0 +1,18 @@
+{
+  "base": "model_guidance_n4_w1.75_a0.9",
+  "checkpoint_sha256": "a3fb874ca1d2c160905dc11d79c8b06992428fa6f761cf25ee00433b7c86a407",
+  "bins": 12,
+  "strengths": [
+    0,
+    0.05,
+    0.15,
+    0.35,
+    0.65
+  ],
+  "reference": "50k train only, class or pooled radial power, preserve DC",
+  "validation_seed": 91724,
+  "n_validation": 1600,
+  "criteria": "minimum training-reference projected FD (192 dimensions), ties prefer smaller strength",
+  "test_arms": "locked overall plus best nonzero candidate if zero wins; fixed starting point is the archived uncorrected method",
+  "inspiration": "Kim & Kim, Correcting Guided Diffusion Trajectories with Spectral Alignment, arXiv:2610.02753, 2026-10-02"
+}

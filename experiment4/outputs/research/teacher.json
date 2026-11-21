@@ -1,0 +1,15 @@
+{
+  "teacher": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+  "features": "layer4 output",
+  "resolution": 128,
+  "grid": 4,
+  "views": [
+    "original",
+    "horizontal_flip"
+  ],
+  "n": 50000,
+  "pca_dim": 64,
+  "pca_fit": 2048,
+  "pca_seed": 344,
+  "explained_variance": 0.6532754898071289
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "bands_4",
+  "parent_sha256": "92822b117bd7045d4a4c8c292fa67d84bd70b9793bf8c8e98477e0cfaaf5ad45",
+  "target": "24 midpoint steps (48 calls) of frozen time-only epoch 32, guidance 3",
+  "fit": 1200,
+  "validation": 400,
+  "epochs": 24,
+  "batch": 32,
+  "seeds": [
+    17,
+    73
+  ],
+  "primary_budget": 4,
+  "variants": [
+    "point",
+    "spatial"
+  ],
+  "checkpoint": "lowest validation clipped pixel MSE for each seed",
+  "selection": "lowest validation MSE of the two-seed prediction mean including unmodified base",
+  "origin": "Learning to Solve Generative ODEs Beyond the Linear Span (2026-06-07), endpoint-only adaptation"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "class_0.05",
+  "strength": 0.05,
+  "kind": "class",
+  "train_fd": 38.424421853188335,
+  "agreement": 0.79375,
+  "log_power_mse": 0.37449899315834045
+}

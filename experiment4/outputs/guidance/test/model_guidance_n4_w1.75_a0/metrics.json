@@ -1,0 +1,21 @@
+{
+  "arm": "model_guidance",
+  "cfg": 1.75,
+  "steps": 4,
+  "alpha": 0,
+  "budget": 8,
+  "scenario": "model_guidance_n4_w1.75_a0",
+  "train_pfd": 59.779304811777024,
+  "train_probe_agreement": 0.7916666666666666,
+  "checkpoint_sha256": "a3fb874ca1d2c160905dc11d79c8b06992428fa6f761cf25ee00433b7c86a407",
+  "inception_score_mean": 6.193222886413612,
+  "inception_score_std": 0.127503582387095,
+  "kernel_inception_distance_mean": 0.03372013568878174,
+  "kernel_inception_distance_std": 0.001152632184449676,
+  "noise_seed": 109,
+  "samples": 10000,
+  "sample_seconds": 45.24903442700088,
+  "fid_test": 78.25433567122548,
+  "fid_train": 78.61924740974689,
+  "agreement": 0.7867
+}

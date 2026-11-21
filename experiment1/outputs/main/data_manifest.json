@@ -1,0 +1,78 @@
+{
+  "source": "教师 README 中的北航网盘原始 ZIP；没有使用 torchvision MNIST 替代",
+  "source_url": "https://bhpan.buaa.edu.cn/link/AAB14093C4DF1F4085922390C07C87498F",
+  "archive_sha256": {
+    "train": "05fcd6e84bde4068107c97a1348824b85daa53f29308984024ba4d7c396801a8",
+    "test": "b4ffcb5956e426ca6d4e98c5506524f5329a2c719419d0323c5a13d22efe644a"
+  },
+  "seed": 42,
+  "val_fraction": 0.1,
+  "image_shape": [
+    28,
+    28
+  ],
+  "mean": 0.13064810633659363,
+  "std": 0.30809006094932556,
+  "counts": {
+    "train_full": 60000,
+    "fit": 54000,
+    "validation": 6000,
+    "test": 10000
+  },
+  "class_counts": {
+    "train_full": [
+      5923,
+      6742,
+      5958,
+      6131,
+      5842,
+      5421,
+      5918,
+      6265,
+      5851,
+      5949
+    ],
+    "fit": [
+      5331,
+      6068,
+      5362,
+      5518,
+      5258,
+      4879,
+      5326,
+      5638,
+      5266,
+      5354
+    ],
+    "validation": [
+      592,
+      674,
+      596,
+      613,
+      584,
+      542,
+      592,
+      627,
+      585,
+      595
+    ],
+    "test": [
+      980,
+      1135,
+      1032,
+      1010,
+      982,
+      892,
+      958,
+      1028,
+      974,
+      1009
+    ]
+  },
+  "pixel_overlap": {
+    "validation_samples_identical_to_fit": 0,
+    "test_samples_identical_to_train": 0,
+    "train_duplicate_pixels": 0,
+    "test_duplicate_pixels": 0
+  }
+}

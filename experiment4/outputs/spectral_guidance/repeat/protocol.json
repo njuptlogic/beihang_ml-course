@@ -1,0 +1,7 @@
+{
+  "seed": 27619,
+  "n": 10000,
+  "selection_sha256": "1f4fdd89d195a14c470d683dffefa4a4ff26408f391ea450ac1353898521b0a8",
+  "base": "model_guidance_n4_w1.75_a0.9",
+  "cohort": "same complete 10k real test set; fresh balanced synthetic noise"
+}

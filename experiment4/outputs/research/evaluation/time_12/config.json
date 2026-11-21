@@ -1,0 +1,13 @@
+{
+  "scenario": "time_12",
+  "arm": "time",
+  "solver": "euler",
+  "steps": 12,
+  "evaluations_per_image": 24,
+  "samples": 10000,
+  "noise_seed": 109,
+  "guide": 1.6,
+  "epoch": 32,
+  "checkpoint_sha256": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+  "inception": "torch-fidelity 0.3.0 inception-v3-compat FP32"
+}

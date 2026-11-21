@@ -1,0 +1,8 @@
+{
+  "epoch": 20,
+  "samples": 50,
+  "noise_seed": 719,
+  "mean_abs_pixel_error": 0.0,
+  "max_abs_pixel_error": 0,
+  "device": "cuda"
+}

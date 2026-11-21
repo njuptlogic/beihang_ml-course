@@ -1,0 +1,9 @@
+{
+  "variant": "pyramid_attention",
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "threshold": 0.5681623133333333
+}

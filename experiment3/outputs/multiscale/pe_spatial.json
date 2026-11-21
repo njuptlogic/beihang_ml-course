@@ -1,0 +1,20 @@
+{
+  "weights": "facebook/PE-Spatial-T16-512",
+  "revision": "78e209188fb04f428092a5f506a22af24298e659",
+  "sha256": "6bed3e60e22f7af691d51b87fde8b29bf7c0c3d23a905446e6be45fb0c95df6e",
+  "code_commit": "3e352cca660658d4b5c90f42a7808b11469e4c66",
+  "size": [
+    512,
+    288
+  ],
+  "blocks": [
+    6,
+    11
+  ],
+  "retained": [
+    0.9089955155977097,
+    0.9276806200282597
+  ],
+  "fit_images": 1360,
+  "patches_per_fit": 24
+}

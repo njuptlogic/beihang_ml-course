@@ -1,0 +1,7 @@
+sample,condition,transition,previous,combined,value
+6532,Bird,Gained,Deer,Bird,0.261564095
+9582,Bird,Lost,Bird,Deer,-0.198871675
+3497,Horse,Gained,Deer,Horse,0.271524575
+7087,Horse,Lost,Horse,Deer,-0.176080883
+5935,Dog,Gained,Deer,Dog,0.2165196683
+8275,Dog,Lost,Dog,Cat,-0.20809098

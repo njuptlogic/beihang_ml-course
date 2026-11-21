@@ -1,0 +1,6 @@
+{
+  "training": "affine",
+  "radius": 0,
+  "mix": 0.0,
+  "representative_seed": 42
+}

@@ -1,0 +1,24 @@
+{
+  "design": "all_regions",
+  "rank": 18,
+  "ridge": 0.5,
+  "weighting": "balanced_class",
+  "fold_auc": 0.9297793615551452,
+  "within_width_auc": 0.877462977622995,
+  "criterion": 0.9036211695890701,
+  "fold1": 0.9135469701507438,
+  "fold2": 0.971501014198783,
+  "fold3": 0.9824262693827911,
+  "fold4": 0.8516431924882629,
+  "threshold": 0.6515161774025646,
+  "platt_scale": 4.60938814070035,
+  "platt_intercept": -0.2832200305872032,
+  "encoder": "natural",
+  "comparator": {
+    "design": "all_regions",
+    "threshold": 0.43954375016171343,
+    "platt_scale": 4.950651922430859,
+    "platt_intercept": -0.2661797578867058
+  },
+  "protocol_sha256": "7fd0e7176d8bb16879be1d07eea3003a5c5cb4103a266202da379f642cc5d354"
+}

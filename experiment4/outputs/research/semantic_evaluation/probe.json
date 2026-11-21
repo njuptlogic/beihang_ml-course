@@ -1,0 +1,5 @@
+{
+  "training_reference": "10,000 stratified real training images",
+  "ridge": 100,
+  "real_test_accuracy": 0.9682
+}

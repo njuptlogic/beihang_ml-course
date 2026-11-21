@@ -1,0 +1,13 @@
+{
+  "scenario": "align_12",
+  "arm": "align",
+  "solver": "euler",
+  "steps": 12,
+  "evaluations_per_image": 24,
+  "samples": 10000,
+  "noise_seed": 109,
+  "guide": 1.6,
+  "epoch": 32,
+  "checkpoint_sha256": "62025f94dcfb944e3a00847f1671484e0b83ed9e79779f1cf735ad4479e8191a",
+  "inception": "torch-fidelity 0.3.0 inception-v3-compat FP32"
+}

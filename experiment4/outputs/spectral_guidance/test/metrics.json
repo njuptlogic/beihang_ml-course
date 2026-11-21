@@ -1,0 +1,22 @@
+{
+  "name": "global_0.35",
+  "kind": "global",
+  "strength": 0.35,
+  "calibration_probe_agreement": 0.803125,
+  "train_fd": 36.64506301797394,
+  "base": "model_guidance_n4_w1.75_a0.9",
+  "fid_train": 48.373038002380724,
+  "fid_test": 48.39827713951382,
+  "kernel_inception_distance_mean": 0.01817380905151367,
+  "kernel_inception_distance_std": 0.0008152673920153952,
+  "inception_score_mean": 7.192563831568556,
+  "inception_score_std": 0.10835853900634251,
+  "agreement": 0.8046,
+  "n": 10000,
+  "budget": 8,
+  "noise_seed": 109,
+  "checkpoint_sha256": "a3fb874ca1d2c160905dc11d79c8b06992428fa6f761cf25ee00433b7c86a407",
+  "base_pixel_exact": 64,
+  "corrected_pixel_exact": 64,
+  "selected": true
+}

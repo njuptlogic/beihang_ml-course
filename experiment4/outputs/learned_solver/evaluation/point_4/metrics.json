@@ -1,0 +1,23 @@
+{
+  "method": "point_4",
+  "learned_coefficients_sha256": {
+    "17": "6f95a1a6ca6fb62e444079dde9010d2d35a6d949fe97f1d1f12e57926e3b54fd",
+    "73": "bb1175180d7331f0238465e0f4e51151b36134f723d9d34201cd3d36cbe8dd13",
+    "base": "92822b117bd7045d4a4c8c292fa67d84bd70b9793bf8c8e98477e0cfaaf5ad45"
+  },
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 4,
+  "selected": false,
+  "generation_batch": 50,
+  "residual_protocol_sha256": "feac90f02939293de959f9b52e227a57086514391ae3077253fb58d5510409c2",
+  "fid_train": 90.30483061894057,
+  "fid_test": 91.15288601595495,
+  "kernel_inception_distance_mean": 0.0644905948638916,
+  "kernel_inception_distance_std": 0.00167106148673773,
+  "inception_score_mean": 6.113834553243007,
+  "inception_score_std": 0.06879678076670907,
+  "agreement": 0.5845
+}

@@ -1,0 +1,11 @@
+{
+  "data_counts": "passed",
+  "disjoint_fit_validation_indices": "passed",
+  "checkpoint_selected_by_validation_only": "passed",
+  "prediction_csv_alignment": "passed",
+  "csv_metrics_consistency": "passed",
+  "probability_normalization": "passed",
+  "independent_cnn_reload_accuracy": 0.995,
+  "independent_cnn_reload_confusion_matrix": "identical",
+  "unit_tests_passed": 7
+}

@@ -1,0 +1,123 @@
+{
+  "control_12": {
+    "n": 10000,
+    "checkpoint_sha256": "274ff8e082da51cefc1bfd76966175d6f80dabffb7b489d4658560a87db1647f",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 4.888183066357707,
+    "recomputed_agreement": 0.43,
+    "recomputed_test_fid": 71.94315620139594,
+    "recomputed_test_kid": 0.057082567214965824
+  },
+  "time_12": {
+    "n": 10000,
+    "checkpoint_sha256": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.257853110105661,
+    "recomputed_agreement": 0.4581,
+    "recomputed_test_fid": 65.80136851136905,
+    "recomputed_test_kid": 0.04829174518585205
+  },
+  "combined_12": {
+    "n": 10000,
+    "checkpoint_sha256": "8b06fe650f392e6994c3953e18939b42aa9fab42d2c7361eed660bb2991d50cb",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.110577281553782,
+    "recomputed_agreement": 0.4503,
+    "recomputed_test_fid": 66.99787813168422,
+    "recomputed_test_kid": 0.04978170394897461
+  },
+  "combined_projected": {
+    "n": 10000,
+    "checkpoint_sha256": "8b06fe650f392e6994c3953e18939b42aa9fab42d2c7361eed660bb2991d50cb",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.828123654288041,
+    "recomputed_agreement": 0.6406,
+    "recomputed_test_fid": 63.76478317709683,
+    "recomputed_test_kid": 0.03575201034545898
+  },
+  "combined_strong": {
+    "n": 10000,
+    "checkpoint_sha256": "8b06fe650f392e6994c3953e18939b42aa9fab42d2c7361eed660bb2991d50cb",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.935246651152471,
+    "recomputed_agreement": 0.6516,
+    "recomputed_test_fid": 62.33168513670432,
+    "recomputed_test_kid": 0.03491206169128418
+  },
+  "combined_midpoint6": {
+    "n": 10000,
+    "checkpoint_sha256": "8b06fe650f392e6994c3953e18939b42aa9fab42d2c7361eed660bb2991d50cb",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 4.945487752692591,
+    "recomputed_agreement": 0.4113,
+    "recomputed_test_fid": 73.81736003127139,
+    "recomputed_test_kid": 0.05544163227081299
+  },
+  "align_12": {
+    "n": 10000,
+    "checkpoint_sha256": "62025f94dcfb944e3a00847f1671484e0b83ed9e79779f1cf735ad4479e8191a",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 4.863045866734906,
+    "recomputed_agreement": 0.4286,
+    "recomputed_test_fid": 72.7914023650842,
+    "recomputed_test_kid": 0.05771990299224854
+  },
+  "extended_12": {
+    "n": 10000,
+    "checkpoint_sha256": "1d7ebf819add1f70f0aa7528ef79b20b4f247ced8afdf24f52e3b275226830a8",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.431999628025818,
+    "recomputed_agreement": 0.49,
+    "recomputed_test_fid": 62.05885512711359,
+    "recomputed_test_kid": 0.04520923614501953
+  },
+  "time_strong": {
+    "n": 10000,
+    "checkpoint_sha256": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 6.056904802957012,
+    "recomputed_agreement": 0.6728,
+    "recomputed_test_fid": 62.95052336122808,
+    "recomputed_test_kid": 0.03301314353942871
+  },
+  "control_strong": {
+    "n": 10000,
+    "checkpoint_sha256": "274ff8e082da51cefc1bfd76966175d6f80dabffb7b489d4658560a87db1647f",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.643023524106987,
+    "recomputed_agreement": 0.6387,
+    "recomputed_test_fid": 69.5528717604816,
+    "recomputed_test_kid": 0.03986672401428223
+  },
+  "align_strong": {
+    "n": 10000,
+    "checkpoint_sha256": "62025f94dcfb944e3a00847f1671484e0b83ed9e79779f1cf735ad4479e8191a",
+    "resampled": 100,
+    "mean_abs_pixel_error": 0.0,
+    "max_abs_pixel_error": 0,
+    "recomputed_is": 5.556563241211993,
+    "recomputed_agreement": 0.6203,
+    "recomputed_test_fid": 68.99433390499104,
+    "recomputed_test_kid": 0.041690797805786134
+  }
+}

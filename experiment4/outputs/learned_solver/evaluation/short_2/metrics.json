@@ -1,0 +1,19 @@
+{
+  "method": "short_2",
+  "learned_coefficients_sha256": "cd3ba04bf22ab7aba51233812e0b3b4ca5fbb88f7bd6e4227580ba6fea1c685d",
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 2,
+  "selected": false,
+  "generation_batch": 50,
+  "target_protocol_sha256": "c26aa2959c7aae1dfd8bbe532fbce2d9ac0dfd41ba8232d61a4d13241d18ec02",
+  "fid_train": 120.54195070304195,
+  "fid_test": 121.27446239072896,
+  "kernel_inception_distance_mean": 0.09827483654022216,
+  "kernel_inception_distance_std": 0.0023267517373918205,
+  "inception_score_mean": 4.084424745911472,
+  "inception_score_std": 0.1126475308193505,
+  "agreement": 0.4339
+}

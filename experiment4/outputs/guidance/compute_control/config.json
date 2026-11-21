@@ -1,0 +1,14 @@
+{
+  "arm": "compute_control",
+  "epochs": 13,
+  "parent_epochs": 44,
+  "seed": 1843,
+  "parent_sha256": "1d7ebf819add1f70f0aa7528ef79b20b4f247ced8afdf24f52e3b275226830a8",
+  "batch": 128,
+  "ema": 0.995,
+  "learning_rate_start": 0.00014,
+  "learning_rate_end": 6e-05,
+  "drop_label": 0.12,
+  "time_law": "logit_normal_0_1",
+  "generator_parameters": 673532
+}

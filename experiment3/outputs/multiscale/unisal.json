@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/rdroste/unisal",
+  "commit": "7f8ca1a7ecb3dbc1bf7fca837cb6186a85ac27d9",
+  "weight": "training_runs/pretrained_unisal/weights_best.pth",
+  "sha256": "4a9157411f1741d588b15670d15295e998805648b8b6348599fe447298338481",
+  "configuration": "static single image, SALICON branch, 416x256, frozen published weights",
+  "published_training_domains": [
+    "DHF1K",
+    "Hollywood-2",
+    "UCF Sports",
+    "SALICON"
+  ]
+}

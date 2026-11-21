@@ -1,0 +1,7 @@
+index,category,direction,previous,chosen
+82,bird,gained,deer,bird
+113,cat,lost,cat,dog
+5,dog,gained,cat,dog
+1267,horse,lost,horse,deer
+168,ship,gained,airplane,ship
+49,truck,lost,truck,cat

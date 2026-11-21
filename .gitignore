@@ -1,0 +1,60 @@
+# Python caches and local environments
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.py[cod]
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Datasets, downloaded backbones and generated feature arrays
+/experiment[1-4]/data/
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Model weights and checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.tflite
+
+# Training output. Keep tables and summaries used by the reports.
+/experiment[1-4]/outputs/**/*
+!/experiment[1-4]/outputs/**/
+!/experiment[1-4]/outputs/**/*.csv
+!/experiment[1-4]/outputs/**/*.json
+!/experiment1/outputs/ablation/analysis/*.png
+/experiment1/outputs/live_*/
+/experiment1/outputs/reproduce*/
+/experiment[1-4]/outputs/**/tensorboard/
+events.out.tfevents.*
+*.log
+
+# Generated submission documents
+/experiment1/report/*.pdf

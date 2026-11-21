@@ -1,0 +1,7 @@
+series,sample,condition,class_name,noise_seed
+Without correction,2,2,Bird,109
+Without correction,4,4,Deer,109
+Without correction,8,8,Ship,109
+Spectral correction,2,2,Bird,109
+Spectral correction,4,4,Deer,109
+Spectral correction,8,8,Ship,109

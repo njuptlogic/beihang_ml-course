@@ -1,0 +1,30 @@
+{
+  "selection_file": "outputs/guidance/selection/locked.json",
+  "selection_sha256": "2df57e4c0a7b8a9973dbc924aaf8a12384b7606ed0bb27dde5bbbfa429036de5",
+  "models": {
+    "time32": {
+      "scenario": "time_strong",
+      "checkpoint_sha256": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+      "feature_sha256": "4a61dac779a4704606ee3fd99c00ff0afbba8c87b6036ab8d76c1c33aef0b2cb",
+      "source": "outputs/research/evaluation/time_strong/features.npy"
+    },
+    "extended44": {
+      "scenario": "extended_12",
+      "checkpoint_sha256": "1d7ebf819add1f70f0aa7528ef79b20b4f247ced8afdf24f52e3b275226830a8",
+      "feature_sha256": "f21c53b70739374371bf17a33b525dc9c4be6ca151488ba99eda4088ca897d83",
+      "source": "outputs/research/evaluation/extended_12/features.npy"
+    },
+    "quality8": {
+      "scenario": "model_guidance_n4_w1.75_a0.9",
+      "checkpoint_sha256": "a3fb874ca1d2c160905dc11d79c8b06992428fa6f761cf25ee00433b7c86a407",
+      "feature_sha256": "74e713eea9afca833d5985aa7ccc6955fce135e1b99f4c638d49ae57fe8fe554",
+      "source": "outputs/guidance/test/model_guidance_n4_w1.75_a0.9/features.npy"
+    },
+    "quality24": {
+      "scenario": "control_n12_w3.5_a0.4",
+      "checkpoint_sha256": "ea0a081e4cb0bc245d39f18424e640a83a2db5377e09ec8f615419e441c6ab03",
+      "feature_sha256": "586f6bca50daaf8f52f250686018be9a18a47c5fbfb2023e7832abd92f0306ba",
+      "source": "outputs/guidance/test/control_n12_w3.5_a0.4/features.npy"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "pyramid+dual",
+  "weights": {
+    "pyramid": 0.5,
+    "dual": 0.5
+  },
+  "cc": 0.9020233750343323,
+  "kl": 0.2389008104801178,
+  "sim": 0.7643908262252808,
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "arms": [
+    "middle",
+    "pyramid",
+    "guided",
+    "scatter",
+    "full",
+    "residual",
+    "pe_core",
+    "pe_spatial",
+    "dual"
+  ],
+  "criterion": "validation mean per-image CC on 90x160; no test labels"
+}

@@ -1,0 +1,21 @@
+{
+  "scenario": "time_strong",
+  "arm": "time",
+  "solver": "euler",
+  "steps": 12,
+  "evaluations_per_image": 24,
+  "samples": 10000,
+  "noise_seed": 109,
+  "guide": 3.0,
+  "epoch": 32,
+  "checkpoint_sha256": "29d5b03c39b34a876689a53f909dd00346848119c67b72c2182d5420c8948eb2",
+  "inception": "torch-fidelity 0.3.0 inception-v3-compat FP32",
+  "generation_seconds": 24.787046755998745,
+  "fid_train": 62.8014860751544,
+  "fid_test": 62.95052336122808,
+  "inception_score_mean": 6.056904802957012,
+  "inception_score_std": 0.11694381635032998,
+  "kernel_inception_distance_mean": 0.03301314353942871,
+  "kernel_inception_distance_std": 0.0014180893448261238,
+  "agreement": 0.6728
+}

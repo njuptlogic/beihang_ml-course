@@ -1,0 +1,18 @@
+{
+  "method": "euler_4",
+  "learned_coefficients_sha256": null,
+  "protocol_sha256": "73d6cfd75be35f708719b710ef4c4f4efc8d36bf8bdf52e06b2dd2c3d9b98b88",
+  "noise_seed": 109,
+  "n": 10000,
+  "guidance": 3.0,
+  "network_calls": 4,
+  "selected": false,
+  "generation_batch": 50,
+  "fid_train": 76.65207920205813,
+  "fid_test": 76.79338909269387,
+  "kernel_inception_distance_mean": 0.041891160011291506,
+  "kernel_inception_distance_std": 0.0013814843712995526,
+  "inception_score_mean": 5.746573387551911,
+  "inception_score_std": 0.12237422442869061,
+  "agreement": 0.6647
+}

@@ -1,0 +1,21 @@
+{
+  "scenario": "combined_midpoint6",
+  "arm": "combined",
+  "solver": "midpoint",
+  "steps": 6,
+  "evaluations_per_image": 24,
+  "samples": 10000,
+  "noise_seed": 109,
+  "guide": 1.6,
+  "epoch": 32,
+  "checkpoint_sha256": "8b06fe650f392e6994c3953e18939b42aa9fab42d2c7361eed660bb2991d50cb",
+  "inception": "torch-fidelity 0.3.0 inception-v3-compat FP32",
+  "generation_seconds": 36.32965545299885,
+  "fid_train": 73.13683996155356,
+  "fid_test": 73.81736003127139,
+  "inception_score_mean": 4.945487752692591,
+  "inception_score_std": 0.10454925796189171,
+  "kernel_inception_distance_mean": 0.05544163227081299,
+  "kernel_inception_distance_std": 0.0014985587000881844,
+  "agreement": 0.4113
+}

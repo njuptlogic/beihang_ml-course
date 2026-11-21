@@ -1,0 +1,2 @@
+method,n,steps,guidance,evaluations_per_image,generation_seconds,fid_train,fid_test,inception_score_mean,inception_score_std,kernel_inception_distance_mean,kernel_inception_distance_std
+flow_main,10000,12,1.6,24,16.493240515999787,80.95021144602026,81.58051139783049,4.413839903454964,0.10032940199206349,0.064918212890625,0.0017446966449610598

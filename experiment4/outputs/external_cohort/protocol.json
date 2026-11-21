@@ -1,0 +1,14 @@
+{
+  "external_commit": "d9982abb0bfc4846b8d13a11e66b887d946205d0",
+  "old_reference_size": 2000,
+  "new_reference_size": 2000,
+  "generator_partitions": 5,
+  "per_class_per_partition": 200,
+  "seed": 31091,
+  "bootstrap_replicates": 1000,
+  "bootstrap": "stratified size-200 multinomial per class for each reference and each generated block; one shared reference draw over all five blocks; same generated indices and weights across locked samplers. Centred percentile 95% intervals. Model weights fixed.",
+  "kernel": "torch-fidelity polynomial MMD degree=3, gamma=1/2048, coef0=1, diagonal-excluded sample self-terms, all cross-pairs; subtract constant 1 from each kernel for numerical precision",
+  "primary": "Mean across five disjoint 2,000-image generated blocks versus the same frozen reference of 2,000 images, conditional labels pooled",
+  "classwise": "Same estimator restricted to the 200 examples of a class per side and block; descriptive only",
+  "reference_indices_sha256": "9be2b776bae0766e4e9a01d27f86978b227f7ffec73715e4c6f542a08ee3fd54"
+}

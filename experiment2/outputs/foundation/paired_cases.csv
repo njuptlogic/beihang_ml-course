@@ -1,0 +1,5 @@
+kind,n,index,member,old,new
+Corrected FP,2,1843,2-MedImage-TestSet/normal/normal_102623.jpg,0.85142595,0.18612742252430212
+Corrected FN,4,1717,2-MedImage-TestSet/disease/disease_002709.jpg,0.11230823,0.923201061511791
+New FP,11,1853,2-MedImage-TestSet/normal/normal_104705.jpg,0.002147284,0.7707325165979154
+New FN,4,1693,2-MedImage-TestSet/disease/disease_002596.jpg,0.99565405,0.17756922769129244

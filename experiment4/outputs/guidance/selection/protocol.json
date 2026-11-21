@@ -1,0 +1,442 @@
+{
+  "noise_seed": 1309,
+  "samples": 1200,
+  "training_reference": 10000,
+  "projection": "leading 192 real training Inception features (PCA)",
+  "beta": 0.6,
+  "criteria": "Minimum projected FD per branch-evaluation budget; for the secondary condition objective maximize probe agreement among settings within 12% of minimum FD. No official test images or final-seed noise used for selection.",
+  "candidates": [
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "parent_n4_w3_a0"
+    },
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "parent_n4_w3_a0.4"
+    },
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "parent_n4_w3_a0.9"
+    },
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "parent_n12_w3_a0"
+    },
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "parent_n12_w3_a0.4"
+    },
+    {
+      "arm": "parent",
+      "cfg": 3.0,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "parent_n12_w3_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "control_n4_w2.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "control_n4_w2.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "control_n4_w2.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "control_n4_w3.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "control_n4_w3.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "control_n4_w3.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "control_n4_w4.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "control_n4_w4.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "control_n4_w4.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "control_n8_w1_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "control_n8_w1_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "control_n8_w1_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "control_n12_w2.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "control_n12_w2.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "control_n12_w2.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "control_n12_w3.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "control_n12_w3.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "control_n12_w3.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "control_n12_w4.5_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "control_n12_w4.5_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 4.5,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "control_n12_w4.5_a0.9"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "control_n24_w1_a0"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "control_n24_w1_a0.4"
+    },
+    {
+      "arm": "control",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "control_n24_w1_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w1.75_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w1.75_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w1.75_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w2.5_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w2.5_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w2.5_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w3.5_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w3.5_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 4,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "model_guidance_n4_w3.5_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0,
+      "budget": 8,
+      "scenario": "model_guidance_n8_w1_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0.4,
+      "budget": 8,
+      "scenario": "model_guidance_n8_w1_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 8,
+      "alpha": 0.9,
+      "budget": 8,
+      "scenario": "model_guidance_n8_w1_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w1.75_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w1.75_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.75,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w1.75_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w2.5_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w2.5_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 2.5,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w2.5_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w3.5_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w3.5_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 3.5,
+      "steps": 12,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "model_guidance_n12_w3.5_a0.9"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0,
+      "budget": 24,
+      "scenario": "model_guidance_n24_w1_a0"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0.4,
+      "budget": 24,
+      "scenario": "model_guidance_n24_w1_a0.4"
+    },
+    {
+      "arm": "model_guidance",
+      "cfg": 1.0,
+      "steps": 24,
+      "alpha": 0.9,
+      "budget": 24,
+      "scenario": "model_guidance_n24_w1_a0.9"
+    }
+  ]
+}

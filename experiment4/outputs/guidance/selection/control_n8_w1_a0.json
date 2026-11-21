@@ -1,0 +1,11 @@
+{
+  "arm": "control",
+  "cfg": 1.0,
+  "steps": 8,
+  "alpha": 0,
+  "budget": 8,
+  "scenario": "control_n8_w1_a0",
+  "train_pfd": 56.40291429253665,
+  "train_probe_agreement": 0.3458333333333333,
+  "checkpoint_sha256": "ea0a081e4cb0bc245d39f18424e640a83a2db5377e09ec8f615419e441c6ab03"
+}

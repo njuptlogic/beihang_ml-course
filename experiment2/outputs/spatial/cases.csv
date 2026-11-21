@@ -1,0 +1,5 @@
+group,index,member,previous,selected,n
+Corrected,1798,2-MedImage-TestSet/normal/normal_095276.jpg,0.3819535395774538,0.1679835707102353,46
+New error,1672,2-MedImage-TestSet/disease/disease_002468.jpg,0.6528624806198278,0.23152062761500736,11
+Both correct,1713,2-MedImage-TestSet/disease/disease_002682.jpg,0.807852261398345,0.946506759619351,170
+Both wrong,1746,2-MedImage-TestSet/normal/normal_092106.jpg,0.5567521603887422,0.7691522081427787,23

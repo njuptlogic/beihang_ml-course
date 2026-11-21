@@ -1,0 +1,13 @@
+{
+  "n": 1500,
+  "per_class": 150,
+  "seed": 761,
+  "split": "real CIFAR-10 training images",
+  "times": [
+    0.125,
+    0.375,
+    0.625,
+    0.875
+  ],
+  "evaluation": "paired clean images, base noise, labels and time across weights"
+}

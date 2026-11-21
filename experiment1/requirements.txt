@@ -1,0 +1,10 @@
+# GPU 版 torch 先按 README 中的 CUDA 12.4 命令安装。
+torch==2.6.0
+numpy==2.2.6
+Pillow==11.2.1
+matplotlib==3.10.3
+scikit-learn==1.6.1
+requests==2.32.4
+reportlab==4.4.1
+pytest==8.3.5
+tensorboard==2.21.0
