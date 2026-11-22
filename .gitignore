@@ -56,5 +56,4 @@ checkpoints/
 events.out.tfevents.*
 *.log
 
-# Generated submission documents
-/experiment1/report/*.pdf
+# Keep final submission PDFs tracked in experiment[1-4]/report/
