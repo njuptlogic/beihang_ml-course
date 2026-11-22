@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
+
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#334155"/>
+  </marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#2A7B6F"/>
+  </marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#C47D3B"/>
+  </marker>
+  <marker id="arr-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#94A3B8"/>
+  </marker>
+  <radialGradient id="priorGrad" cx="50%" cy="50%" r="52%">
+    <stop offset="0%" stop-color="#FFF5D6"/>
+    <stop offset="35%" stop-color="#F6B26B"/>
+    <stop offset="72%" stop-color="#A66A9E"/>
+    <stop offset="100%" stop-color="#4A3B6B"/>
+  </radialGradient>
+  <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#E2E8F0"/>
+    <stop offset="100%" stop-color="#80B8AE"/>
+  </linearGradient>
+  <filter id="softShadow" x="-8%" y="-8%" width="118%" height="118%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0F172A" flood-opacity="0.07"/>
+  </filter>
+</defs>
+
+<style>
+  text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "Times New Roman", sans-serif; fill: #1E293B; }
+  .title { font-size: 19px; font-weight: 700; fill: #0F172A; }
+  .sec { font-size: 13px; font-weight: 700; fill: #1E293B; }
+  .lbl { font-size: 12px; font-weight: 700; fill: #1E293B; }
+  .sub { font-size: 10.5px; fill: #475569; }
+  .math { font-family: "Times New Roman", "Microsoft YaHei", serif; font-style: italic; font-size: 12.5px; fill: #0F172A; }
+  .tiny { font-size: 9.5px; fill: #475569; }
+  .wh { fill: #FFFFFF; font-weight: 700; }
+</style>
+
+<rect width="1180" height="610" fill="#FFFFFF"/>
+
+<text x="590" y="28" text-anchor="middle" class="title">四步条件直线流生成架构：条件 U-Net 速度场、EMA 差分目标、历史外推与 2D 频谱校正</text>
+
+<!-- Vertical Divider between Left (U-Net & Training) and Right (4-Step Sampling & FFT) -->
+<line x1="726" y1="50" x2="726" y2="540" stroke="#CBD5E1" stroke-width="1.4"/>
+
+<!-- ==================== LEFT: SYMMETRIC 3D U-NET HOURGLASS ==================== -->
+<text x="364" y="56" text-anchor="middle" class="sec">条件速度网络 U-Net（参数 673,532 · 单分支 0.135 GFLOPs）</text>
+
+<!-- PixelUnshuffle & PixelShuffle badges at top -->
+<rect x="86" y="72" width="118" height="24" rx="6" fill="#F1F5F9" stroke="#64748B" stroke-width="1.1"/>
+<text x="145" y="88" text-anchor="middle" class="tiny" style="font-weight:700;">x_t (3×32²) → 12×16²</text>
+<path d="M 145,96 L 145,114" fill="none" stroke="#334155" stroke-width="1.4" marker-end="url(#arr)"/>
+
+<rect x="518" y="72" width="124" height="24" rx="6" fill="#E6F4EA" stroke="#2A7B6F" stroke-width="1.1"/>
+<text x="580" y="88" text-anchor="middle" class="tiny" style="font-weight:700;fill:#1B5E53;">PixelShuffle → v_θ (3×32²)</text>
+<path d="M 580,118 L 580,99" fill="none" stroke="#2A7B6F" stroke-width="1.4" marker-end="url(#arr-teal)"/>
+
+<!-- Enc ResBlock (48 x 16 x 16) -->
+<polygon points="112,128 134,110 190,110 168,128" fill="#A3ADD0" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="168,128 190,110 190,196 168,214" fill="#6A76A0" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="112,128 168,128 168,214 112,214" fill="#828EB8" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="104" y="162" width="44" height="34" rx="6" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="126" y="177" text-anchor="middle" class="tiny" style="font-weight:700;">Enc</text>
+<text x="126" y="190" text-anchor="middle" class="tiny">残差块</text>
+<text x="150" y="232" text-anchor="middle" class="tiny" style="font-weight:700;">48×16×16</text>
+
+<!-- Dec ResBlock (96->48 x 16 x 16) -->
+<polygon points="544,128 566,110 622,110 600,128" fill="#AFD8CF" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="600,128 622,110 622,196 600,214" fill="#71AA9E" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="544,128 600,128 600,214 544,214" fill="#8BC2B6" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="572" y="162" width="44" height="34" rx="6" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="594" y="177" text-anchor="middle" class="tiny" style="font-weight:700;">Dec</text>
+<text x="594" y="190" text-anchor="middle" class="tiny">残差块</text>
+<text x="584" y="232" text-anchor="middle" class="tiny" style="font-weight:700;">Skip+16×16</text>
+
+<!-- Curved Skip Connection Bridge (16x16) -->
+<path d="M 192,158 C 280,126 440,126 538,158" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="364" y="128" text-anchor="middle" class="lbl">16×16 浅层跳跃连接 (Skip Concat)</text>
+
+<!-- Downsample & Upsample arrows -->
+<path d="M 178,224 L 222,272" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="182" y="262" text-anchor="middle" class="tiny">下采样</text>
+
+<path d="M 508,272 L 548,224" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="546" y="262" text-anchor="middle" class="tiny">上采样</text>
+
+<!-- Mid1 ResBlock (96 x 8 x 8) -->
+<polygon points="226,278 246,262 298,262 278,278" fill="#9BA8CE" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="278,278 298,262 298,328 278,344" fill="#63729B" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="226,278 278,278 278,344 226,344" fill="#7A89B3" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="218" y="302" width="44" height="32" rx="6" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="240" y="316" text-anchor="middle" class="tiny" style="font-weight:700;">Mid1</text>
+<text x="240" y="328" text-anchor="middle" class="tiny">残差块</text>
+<text x="260" y="362" text-anchor="middle" class="tiny" style="font-weight:700;">96×8×8</text>
+
+<!-- 8x8 4-Head Self-Attention Bottleneck (WARM AMBER/CORAL - EXPLICITLY NO FiLM!) -->
+<path d="M 298,308 L 328,308" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+<polygon points="334,282 354,266 408,266 388,282" fill="#F0C5A2" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="388,282 408,266 408,328 388,344" fill="#CB8B5A" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="334,282 388,282 388,344 334,344" fill="#E3A675" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="361" y="310" text-anchor="middle" class="tiny wh">8×8 四头</text>
+<text x="361" y="324" text-anchor="middle" class="tiny wh">自注意力</text>
+<text x="366" y="362" text-anchor="middle" class="lbl" style="fill:#9A3412;">瓶颈自注意力 (4×24维)</text>
+<text x="366" y="377" text-anchor="middle" class="tiny" style="fill:#9A3412;">不接收 FiLM，保留空间上下文</text>
+<path d="M 408,308 L 438,308" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+
+<!-- Mid2 ResBlock (96 x 8 x 8) -->
+<polygon points="444,278 464,262 516,262 496,278" fill="#ACD5CC" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="496,278 516,262 516,328 496,344" fill="#6EA498" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="444,278 496,278 496,344 444,344" fill="#88BDB1" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<rect x="466" y="302" width="44" height="32" rx="6" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="488" y="316" text-anchor="middle" class="tiny" style="font-weight:700;">Mid2</text>
+<text x="488" y="328" text-anchor="middle" class="tiny">残差块</text>
+<text x="476" y="362" text-anchor="middle" class="tiny" style="font-weight:700;">96×8×8</text>
+
+<!-- Side FiLM Conditioning Nodes (t, y) pointing STRICTLY to Enc, Mid1, Mid2, Dec! -->
+<!-- Left (t, y) node -> Enc & Mid1 -->
+<rect x="18" y="232" width="56" height="34" rx="17" fill="#E8E4F3" stroke="#5B21B6" stroke-width="1.5"/>
+<text x="46" y="253" text-anchor="middle" class="math" style="font-weight:700;fill:#4C1D95;">t, y</text>
+<text x="46" y="280" text-anchor="middle" class="tiny" style="fill:#4C1D95;">时间+类别</text>
+<path d="M 46,232 L 46,178 L 100,178" fill="none" stroke="#C47D3B" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<text x="72" y="172" text-anchor="middle" class="tiny" style="fill:#9A3412;font-weight:700;">FiLM (γ,β)</text>
+<path d="M 46,288 L 46,318 L 214,318" fill="none" stroke="#C47D3B" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<text x="128" y="312" text-anchor="middle" class="tiny" style="fill:#9A3412;font-weight:700;">FiLM 调制 (仅注残差块)</text>
+
+<!-- Right (t, y) node -> Dec & Mid2 -->
+<rect x="652" y="232" width="56" height="34" rx="17" fill="#E8E4F3" stroke="#5B21B6" stroke-width="1.5"/>
+<text x="680" y="253" text-anchor="middle" class="math" style="font-weight:700;fill:#4C1D95;">t, y</text>
+<text x="680" y="280" text-anchor="middle" class="tiny" style="fill:#4C1D95;">128维嵌入</text>
+<path d="M 680,232 L 680,178 L 620,178" fill="none" stroke="#C47D3B" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<text x="652" y="172" text-anchor="middle" class="tiny" style="fill:#9A3412;font-weight:700;">FiLM (γ,β)</text>
+<path d="M 680,288 L 680,318 L 514,318" fill="none" stroke="#C47D3B" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<text x="600" y="312" text-anchor="middle" class="tiny" style="fill:#9A3412;font-weight:700;">FiLM (γ,β)</text>
+
+<!-- Bottom-Left: Innovation 1 Box (EMA Teacher Velocity Difference Training Target) -->
+<rect x="24" y="406" width="680" height="122" rx="12" fill="#F4F8F7" stroke="#2A7B6F" stroke-width="1.5"/>
+<text x="42" y="430" class="sec" style="fill:#1B5E53;">创新一：训练期 EMA 教师条件速度差修正目标（第 44–52 轮续训，Logit-Normal 时间采样）</text>
+<text x="42" y="454" class="sub">• 插值状态 <tspan class="math">xₜ = (1−t)z + t·x</tspan>，基础直线流速度目标 <tspan class="math">v_base = x − z</tspan>（随机丢弃 12% 类别标签以支持空条件）</text>
+<text x="42" y="478" class="sub">• 冻结梯度 EMA 教师（衰减 0.995）同批计算条件速度 <tspan class="math">v_c</tspan> 与空条件速度 <tspan class="math">v_u</tspan>，构造修正目标：</text>
+<rect x="164" y="489" width="398" height="28" rx="6" fill="#FFFFFF" stroke="#2A7B6F" stroke-width="1.2"/>
+<text x="363" y="508" text-anchor="middle" class="math" style="font-size:13.5px;font-weight:700;fill:#0F172A;">v_target = (x − z) + 0.65 · (v_c − v_u)   （空标签样本修正项为 0）</text>
+
+<!-- ==================== RIGHT TOP: 4-STEP ODE TRAJECTORY ==================== -->
+<text x="954" y="56" text-anchor="middle" class="sec">创新二：四步历史速度外推采样（8 次分支求值）</text>
+<!-- Gradient top arrow ribbon -->
+<polygon points="756,74 1112,74 1112,66 1152,83 1112,100 1112,92 756,92" fill="url(#stepGrad)"/>
+<text x="944" y="87" text-anchor="middle" class="tiny" style="font-weight:700;fill:#0F172A;">4 步欧拉积分 · CFG w = 1.75 · 外推 α = 0.9 · 历史衰减 β = 0.6</text>
+
+<!-- 4 Thumbnails (t=0, t=0.25, t=0.50, t=1.00) -->
+<image href="data:image/png;base64,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" x="752" y="114" width="76" height="76"/>
+<rect x="752" y="114" width="76" height="76" fill="none" stroke="#334155" stroke-width="1.3"/>
+<text x="790" y="206" text-anchor="middle" class="tiny" style="font-weight:700;">t = 0.00 (噪声)</text>
+
+<path d="M 830,152 L 856,152" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<image href="data:image/png;base64,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" x="860" y="114" width="76" height="76"/>
+<rect x="860" y="114" width="76" height="76" fill="none" stroke="#334155" stroke-width="1.3"/>
+<text x="898" y="206" text-anchor="middle" class="tiny" style="font-weight:700;">t = 0.50 (中步)</text>
+
+<path d="M 938,152 L 964,152" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<image href="data:image/png;base64,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" x="968" y="114" width="76" height="76" style="opacity:0.86;"/>
+<rect x="968" y="114" width="76" height="76" fill="none" stroke="#334155" stroke-width="1.3"/>
+<text x="1006" y="206" text-anchor="middle" class="tiny" style="font-weight:700;">t = 0.75 (细化)</text>
+
+<path d="M 1046,152 L 1072,152" fill="none" stroke="#2A7B6F" stroke-width="1.6" marker-end="url(#arr-teal)"/>
+
+<image href="data:image/png;base64,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" x="1076" y="114" width="76" height="76"/>
+<rect x="1076" y="114" width="76" height="76" fill="none" stroke="#2A7B6F" stroke-width="1.8"/>
+<text x="1114" y="206" text-anchor="middle" class="tiny" style="font-weight:700;fill:#1B5E53;">t = 1.00 (成图)</text>
+
+<rect x="752" y="218" width="400" height="44" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+<text x="952" y="236" text-anchor="middle" class="math" style="font-size:12px;">ṽₖ = vₖ + 0.9(vₖ − mₖ),   mₖ₊₁ = 0.6 mₖ + 0.4 vₖ</text>
+<text x="952" y="253" text-anchor="middle" class="tiny">复用历史速度补偿大步长离散误差 · 零额外 U-Net 求值（FID 78.25 → 50.55）</text>
+
+<!-- Horizontal Divider on Right -->
+<line x1="746" y1="278" x2="1160" y2="278" stroke="#CBD5E1" stroke-width="1.2"/>
+
+<!-- ==================== RIGHT BOTTOM: 2D FFT RADIAL SPECTRUM ==================== -->
+<text x="954" y="300" text-anchor="middle" class="sec">创新三：逐步 2D FFT 径向 12 频带振幅校正</text>
+
+<!-- Concentric Radial Frequency Rings -->
+<circle cx="964" cy="412" r="106" fill="#FAFBFD" stroke="#334155" stroke-width="1.4"/>
+<circle cx="964" cy="412" r="16" fill="none" stroke="#93A8C8" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="30" fill="none" stroke="#8DC2B5" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="44" fill="none" stroke="#93A8C8" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="58" fill="none" stroke="#8DC2B5" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="72" fill="none" stroke="#93A8C8" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="86" fill="none" stroke="#8DC2B5" stroke-width="1.2" stroke-opacity="0.72"/><circle cx="964" cy="412" r="100" fill="none" stroke="#93A8C8" stroke-width="1.2" stroke-opacity="0.72"/><line x1="858" y1="412" x2="1070" y2="412" stroke="#CBD5E1" stroke-width="0.9"/><line x1="964" y1="306" x2="964" y2="518" stroke="#CBD5E1" stroke-width="0.9"/>
+<!-- Radial Power Profile Curves overlaid cleanly -->
+<!-- Real training reference curve (dashed navy) -->
+<path d="M 864,418 C 902,404 930,326 964,320 C 998,326 1026,404 1064,418" fill="none" stroke="#334155" stroke-width="2.2" stroke-dasharray="5,3"/>
+<!-- Generated curve before/after alignment (warm rose) -->
+<path d="M 864,408 C 902,394 930,342 964,336 C 998,342 1026,394 1064,408" fill="none" stroke="#C96A6A" stroke-width="2.2"/>
+
+<!-- Annotations on FFT Circle -->
+<text x="964" y="430" text-anchor="middle" class="tiny" style="font-weight:700;fill:#0F172A;">低频 / DC 保持</text>
+<text x="886" y="430" text-anchor="middle" class="tiny">高频</text>
+<text x="1042" y="430" text-anchor="middle" class="tiny">高频</text>
+
+<!-- Legend & Formula beside FFT circle -->
+<g transform="translate(744, 326)">
+  <line x1="0" y1="8" x2="22" y2="8" stroke="#334155" stroke-width="2.2" stroke-dasharray="5,3"/>
+  <text x="28" y="12" class="tiny" style="font-weight:700;">真实参照功率</text>
+  <line x1="0" y1="28" x2="22" y2="28" stroke="#C96A6A" stroke-width="2.2"/>
+  <text x="28" y="32" class="tiny" style="font-weight:700;fill:#991B1B;">生成状态功率</text>
+  <text x="0" y="60" class="tiny" style="font-weight:700;">目标功率谱：</text>
+  <text x="0" y="76" class="math" style="font-size:11.5px;">t²P_b + (1−t)²</text>
+  <text x="0" y="98" class="tiny">校正强度 = 0.35</text>
+  <text x="0" y="114" class="tiny">严格保留相位与直流</text>
+  <text x="0" y="138" class="tiny" style="fill:#1B5E53;font-weight:700;">FID 50.55 → 48.40</text>
+  <text x="0" y="154" class="tiny" style="fill:#1B5E53;font-weight:700;">IS 7.19 · 一致 80.46%</text>
+</g>
+</svg>

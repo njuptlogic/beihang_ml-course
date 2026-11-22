@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="490" viewBox="0 0 1180 490">
+
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#334155"/>
+  </marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#2A7B6F"/>
+  </marker>
+  <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#C47D3B"/>
+  </marker>
+  <marker id="arr-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#94A3B8"/>
+  </marker>
+  <radialGradient id="priorGrad" cx="50%" cy="50%" r="52%">
+    <stop offset="0%" stop-color="#FFF5D6"/>
+    <stop offset="35%" stop-color="#F6B26B"/>
+    <stop offset="72%" stop-color="#A66A9E"/>
+    <stop offset="100%" stop-color="#4A3B6B"/>
+  </radialGradient>
+  <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#E2E8F0"/>
+    <stop offset="100%" stop-color="#80B8AE"/>
+  </linearGradient>
+  <filter id="softShadow" x="-8%" y="-8%" width="118%" height="118%">
+    <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0F172A" flood-opacity="0.07"/>
+  </filter>
+</defs>
+
+<style>
+  text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "Times New Roman", sans-serif; fill: #1E293B; }
+  .title { font-size: 19px; font-weight: 700; fill: #0F172A; }
+  .sec { font-size: 13px; font-weight: 700; fill: #1E293B; }
+  .lbl { font-size: 12px; font-weight: 700; fill: #1E293B; }
+  .sub { font-size: 10.5px; fill: #475569; }
+  .math { font-family: "Times New Roman", "Microsoft YaHei", serif; font-style: italic; font-size: 12.5px; fill: #0F172A; }
+  .tiny { font-size: 9.5px; fill: #475569; }
+  .wh { fill: #FFFFFF; font-weight: 700; }
+</style>
+
+<rect width="1180" height="490" fill="#FFFFFF"/>
+
+<!-- Subtle Top Title -->
+<text x="590" y="30" text-anchor="middle" class="title">四层卷积手写数字分类器：随机仿射增强、EMA 权重平滑与位移鲁棒性评测架构</text>
+
+<!-- Left: Affine Augmentation Module -->
+<rect x="26" y="155" width="218" height="196" rx="14" fill="#F8FAFC" stroke="#475569" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text x="135" y="180" text-anchor="middle" class="sec">随机仿射几何增强（训练期）</text>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAAAAADji6uXAAAB+UlEQVR4nO3Zz4tPURjH8dcYPxsbERu/imwsiJSUmrJUykYUSzYWfqzYUST5B5SMJP4ApTRRikIWk6I0WQyxwcZCIjNj8dzJNfX9zv1y6XTmvDene557n+f2+XR+3HMpFAqFQqHQ10aSJVhdu36DE3iBUTyvxea0UbAX8i/4Vx7uxh4MYn2tfxRrsKC67q/F8pc0fQ/X4SiOYGHDBMXDf8rcXh9YiWNd4q/wsks8f0nT83AZjuMR7uI7PuMLBjAs1r2nGMHXKtaJ/CVNay4dwENswl7crvrXYkzsY95hooeC+Uuazjicj1vCvwu4V4uNVe3bPyiYv6RpjMPFOI1T+IQNYv5sg/wlTcPDg7guxtlOMV+2Rf6SpjGX7qjaEe36x2yQNI1x+AFL8Q0XxV5mpKWC+UuahoeTft9rTuAynoi96Gu/vgE34rHm4zV/SdPw8BJO9pDkIx5gf4N785c0DQ/7sQU3xYK5ysxvNokzODfDfflLmsaeZhzPxDcF7MI84dG2Don6sLVBwfwlTcPD6dyv2s3Cwx+4hiviH9OBHgrmL2maHk4xjPPVQ4fF/6bBWvx9gxz5S5rGetiJRRjCvmn947gjzga6nXczGyRN20NYgati7Vsuzk5viLWyCflLmr6HUxzCdpwVZwJNyV/S/16wUCgUCoUCPwFy5UnWp2LbOwAAAABJRU5ErkJggg==" x="42" y="194" width="54" height="54"/>
+<image href="data:image/png;base64,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" x="108" y="194" width="54" height="54"/>
+<defs><clipPath id="d5c"><rect x="174" y="194" width="54" height="54"/></clipPath></defs>
+<rect x="174" y="194" width="54" height="54" fill="#000000"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAAAAADji6uXAAAB+UlEQVR4nO3Zz4tPURjH8dcYPxsbERu/imwsiJSUmrJUykYUSzYWfqzYUST5B5SMJP4ApTRRikIWk6I0WQyxwcZCIjNj8dzJNfX9zv1y6XTmvDene557n+f2+XR+3HMpFAqFQqHQ10aSJVhdu36DE3iBUTyvxea0UbAX8i/4Vx7uxh4MYn2tfxRrsKC67q/F8pc0fQ/X4SiOYGHDBMXDf8rcXh9YiWNd4q/wsks8f0nT83AZjuMR7uI7PuMLBjAs1r2nGMHXKtaJ/CVNay4dwENswl7crvrXYkzsY95hooeC+Uuazjicj1vCvwu4V4uNVe3bPyiYv6RpjMPFOI1T+IQNYv5sg/wlTcPDg7guxtlOMV+2Rf6SpjGX7qjaEe36x2yQNI1x+AFL8Q0XxV5mpKWC+UuahoeTft9rTuAynoi96Gu/vgE34rHm4zV/SdPw8BJO9pDkIx5gf4N785c0DQ/7sQU3xYK5ysxvNokzODfDfflLmsaeZhzPxDcF7MI84dG2Don6sLVBwfwlTcPD6dyv2s3Cwx+4hiviH9OBHgrmL2maHk4xjPPVQ4fF/6bBWvx9gxz5S5rGetiJRRjCvmn947gjzga6nXczGyRN20NYgati7Vsuzk5viLWyCflLmr6HUxzCdpwVZwJNyV/S/16wUCgUCoUCPwFy5UnWp2LbOwAAAABJRU5ErkJggg==" x="179" y="190" width="54" height="54" clip-path="url(#d5c)"/>
+<rect x="42" y="194" width="54" height="54" fill="none" stroke="#94A3B8" stroke-width="1"/>
+<rect x="108" y="194" width="54" height="54" fill="none" stroke="#94A3B8" stroke-width="1"/>
+<rect x="174" y="194" width="54" height="54" fill="none" stroke="#94A3B8" stroke-width="1"/>
+<text x="69" y="263" text-anchor="middle" class="tiny">原图 28×28</text>
+<text x="135" y="263" text-anchor="middle" class="tiny">旋转 ±12°</text>
+<text x="201" y="263" text-anchor="middle" class="tiny">平移 ±2px</text>
+<text x="135" y="287" text-anchor="middle" class="sub">网格缩放 0.90～1.10 · 双线性插值</text>
+<text x="135" y="305" text-anchor="middle" class="sub">越界补黑背景值 black ≈ −0.424</text>
+<rect x="52" y="317" width="166" height="22" rx="11" fill="#E6F4EA" stroke="#2A7B6F" stroke-width="1"/>
+<text x="135" y="332" text-anchor="middle" class="tiny" style="fill:#1B5E53;font-weight:700;">验证集选中 · 替代原图基线</text>
+
+<!-- Arrow into Input Slab -->
+<path d="M 244,250 C 262,250 264,250 282,250" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arr)"/>
+
+<!-- Top EMA Capsule -->
+<rect x="405" y="64" width="276" height="44" rx="22" fill="#DCEBE2" stroke="#2A7B6F" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="543" y="83" text-anchor="middle" class="sec" style="fill:#1B4332;">EMA 指数移动平均权重（对照支路）</text>
+<text x="543" y="100" text-anchor="middle" class="tiny" style="fill:#2D6A4F;">θ̄ₜ = 0.995·θ̄ₜ₋₁ + 0.005·θₜ （有效窗口 ≈ 200 步）</text>
+
+<!-- 3D Isometric CNN Backbone Cuboids -->
+<!-- Input 1x28x28 -->
+<polygon points="288,178 314,154 326,154 300,178" fill="#F1F5F9" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="300,178 326,154 326,320 300,344" fill="#CBD5E1" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="288,178 300,178 300,344 288,344" fill="#E2E8F0" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="307" y="366" text-anchor="middle" class="lbl">输入张量</text>
+<text x="307" y="382" text-anchor="middle" class="sub">1×28×28</text>
+
+<path d="M 326,252 L 352,252" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+
+<!-- Conv1-2: 32x28x28 -->
+<polygon points="358,186 386,162 416,162 388,186" fill="#B4C5DF" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="388,186 416,162 416,312 388,336" fill="#7B92B4" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="358,186 388,186 388,336 358,336" fill="#93A8C8" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="387" y="366" text-anchor="middle" class="lbl">Conv1–2 + ReLU</text>
+<text x="387" y="382" text-anchor="middle" class="sub">32×28×28 (3×3)</text>
+<text x="387" y="397" text-anchor="middle" class="tiny">参数 9,568</text>
+
+<path d="M 416,254 L 456,254" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="436" y="244" text-anchor="middle" class="tiny">Pool 2×2</text>
+
+<!-- Conv3: 64x14x14 -->
+<polygon points="462,212 488,190 534,190 508,212" fill="#B6D3C3" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="508,212 534,190 534,292 508,314" fill="#7EA691" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="462,212 508,212 508,314 462,314" fill="#97BCA8" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="498" y="344" text-anchor="middle" class="lbl">Conv3 + ReLU</text>
+<text x="498" y="360" text-anchor="middle" class="sub">64×14×14 (3×3)</text>
+<text x="498" y="375" text-anchor="middle" class="tiny">参数 18,496</text>
+
+<path d="M 536,256 L 566,256" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+
+<!-- Conv4 + Pool: 64x7x7 -->
+<polygon points="572,232 596,212 650,212 626,232" fill="#EFE0C5" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="626,232 650,212 650,280 626,300" fill="#C9AC7E" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/><polygon points="572,232 626,232 626,300 572,300" fill="#DFC59B" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="611" y="330" text-anchor="middle" class="lbl">Conv4 + Pool</text>
+<text x="611" y="346" text-anchor="middle" class="sub">64×7×7 → 3,136</text>
+<text x="611" y="361" text-anchor="middle" class="tiny">参数 36,928</text>
+
+<path d="M 652,258 L 690,258" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+
+<!-- FC Neuron Column (128 -> 10) -->
+<rect x="696" y="166" width="32" height="176" rx="14" fill="#F1F5F9" stroke="#334155" stroke-width="1.6"/>
+<circle cx="712" cy="186" r="8" fill="#B8C7DC" stroke="#334155" stroke-width="1.2"/>
+<circle cx="712" cy="212" r="8" fill="#B8C7DC" stroke="#334155" stroke-width="1.2"/>
+<circle cx="712" cy="238" r="8" fill="#B8C7DC" stroke="#334155" stroke-width="1.2"/>
+<circle cx="712" cy="260" r="2.2" fill="#475569"/>
+<circle cx="712" cy="271" r="2.2" fill="#475569"/>
+<circle cx="712" cy="282" r="2.2" fill="#475569"/>
+<circle cx="712" cy="306" r="8" fill="#B8C7DC" stroke="#334155" stroke-width="1.2"/>
+<circle cx="712" cy="328" r="7" fill="#97BCA8" stroke="#2A7B6F" stroke-width="1.2"/>
+<text x="712" y="366" text-anchor="middle" class="lbl">全连接分类头</text>
+<text x="712" y="382" text-anchor="middle" class="sub">3,136→128→10</text>
+<text x="712" y="397" text-anchor="middle" class="tiny">Dropout(0.5) · 402.8k 参</text>
+
+<!-- Curved Arrows from Conv Blocks up to EMA Capsule -->
+<path d="M 386,162 C 392,132 422,124 446,110" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M 498,190 C 500,152 512,138 525,110" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M 610,212 C 610,164 595,142 580,110" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M 681,86 C 722,86 716,126 712,162" fill="none" stroke="#2A7B6F" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-teal)"/>
+
+<!-- Bottom backbone bracket -->
+<path d="M 288,412 L 288,420 L 728,420 L 728,412" fill="none" stroke="#64748B" stroke-width="1.2"/>
+<text x="508" y="440" text-anchor="middle" class="sec">共享四层 CNN 骨干（总参数 467,818 · 单图前向 37.38 MFLOPs · 交叉熵 + Adam 余弦退火 20 轮）</text>
+
+<!-- Arrow from FC to Right Panel -->
+<path d="M 730,256 C 752,256 754,256 774,256" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arr)"/>
+
+<!-- Right: Inference Selection & Shift Robustness Evaluation Panel -->
+<rect x="780" y="138" width="376" height="234" rx="14" fill="#FAFBFD" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="968" y="164" text-anchor="middle" class="sec">推理方式选型与位置平移鲁棒性评测</text>
+
+<!-- Mini shifted digits -->
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAAAAADji6uXAAAB+UlEQVR4nO3Zz4tPURjH8dcYPxsbERu/imwsiJSUmrJUykYUSzYWfqzYUST5B5SMJP4ApTRRikIWk6I0WQyxwcZCIjNj8dzJNfX9zv1y6XTmvDene557n+f2+XR+3HMpFAqFQqHQ10aSJVhdu36DE3iBUTyvxea0UbAX8i/4Vx7uxh4MYn2tfxRrsKC67q/F8pc0fQ/X4SiOYGHDBMXDf8rcXh9YiWNd4q/wsks8f0nT83AZjuMR7uI7PuMLBjAs1r2nGMHXKtaJ/CVNay4dwENswl7crvrXYkzsY95hooeC+Uuazjicj1vCvwu4V4uNVe3bPyiYv6RpjMPFOI1T+IQNYv5sg/wlTcPDg7guxtlOMV+2Rf6SpjGX7qjaEe36x2yQNI1x+AFL8Q0XxV5mpKWC+UuahoeTft9rTuAynoi96Gu/vgE34rHm4zV/SdPw8BJO9pDkIx5gf4N785c0DQ/7sQU3xYK5ysxvNokzODfDfflLmsaeZhzPxDcF7MI84dG2Don6sLVBwfwlTcPD6dyv2s3Cwx+4hiviH9OBHgrmL2maHk4xjPPVQ4fF/6bBWvx9gxz5S5rGetiJRRjCvmn947gjzga6nXczGyRN20NYgati7Vsuzk5viLWyCflLmr6HUxzCdpwVZwJNyV/S/16wUCgUCoUCPwFy5UnWp2LbOwAAAABJRU5ErkJggg==" x="798" y="182" width="38" height="38"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAAAAADji6uXAAAB+UlEQVR4nO3Zz4tPURjH8dcYPxsbERu/imwsiJSUmrJUykYUSzYWfqzYUST5B5SMJP4ApTRRikIWk6I0WQyxwcZCIjNj8dzJNfX9zv1y6XTmvDene557n+f2+XR+3HMpFAqFQqHQ10aSJVhdu36DE3iBUTyvxea0UbAX8i/4Vx7uxh4MYn2tfxRrsKC67q/F8pc0fQ/X4SiOYGHDBMXDf8rcXh9YiWNd4q/wsks8f0nT83AZjuMR7uI7PuMLBjAs1r2nGMHXKtaJ/CVNay4dwENswl7crvrXYkzsY95hooeC+Uuazjicj1vCvwu4V4uNVe3bPyiYv6RpjMPFOI1T+IQNYv5sg/wlTcPDg7guxtlOMV+2Rf6SpjGX7qjaEe36x2yQNI1x+AFL8Q0XxV5mpKWC+UuahoeTft9rTuAynoi96Gu/vgE34rHm4zV/SdPw8BJO9pDkIx5gf4N785c0DQ/7sQU3xYK5ysxvNokzODfDfflLmsaeZhzPxDcF7MI84dG2Don6sLVBwfwlTcPD6dyv2s3Cwx+4hiviH9OBHgrmL2maHk4xjPPVQ4fF/6bBWvx9gxz5S5rGetiJRRjCvmn947gjzga6nXczGyRN20NYgati7Vsuzk5viLWyCflLmr6HUxzCdpwVZwJNyV/S/16wUCgUCoUCPwFy5UnWp2LbOwAAAABJRU5ErkJggg==" x="798" y="232" width="38" height="38" transform="translate(3,0)"/>
+<image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAAAAADji6uXAAAB+UlEQVR4nO3Zz4tPURjH8dcYPxsbERu/imwsiJSUmrJUykYUSzYWfqzYUST5B5SMJP4ApTRRikIWk6I0WQyxwcZCIjNj8dzJNfX9zv1y6XTmvDene557n+f2+XR+3HMpFAqFQqHQ10aSJVhdu36DE3iBUTyvxea0UbAX8i/4Vx7uxh4MYn2tfxRrsKC67q/F8pc0fQ/X4SiOYGHDBMXDf8rcXh9YiWNd4q/wsks8f0nT83AZjuMR7uI7PuMLBjAs1r2nGMHXKtaJ/CVNay4dwENswl7crvrXYkzsY95hooeC+Uuazjicj1vCvwu4V4uNVe3bPyiYv6RpjMPFOI1T+IQNYv5sg/wlTcPDg7guxtlOMV+2Rf6SpjGX7qjaEe36x2yQNI1x+AFL8Q0XxV5mpKWC+UuahoeTft9rTuAynoi96Gu/vgE34rHm4zV/SdPw8BJO9pDkIx5gf4N785c0DQ/7sQU3xYK5ysxvNokzODfDfflLmsaeZhzPxDcF7MI84dG2Don6sLVBwfwlTcPD6dyv2s3Cwx+4hiviH9OBHgrmL2maHk4xjPPVQ4fF/6bBWvx9gxz5S5rGetiJRRjCvmn947gjzga6nXczGyRN20NYgati7Vsuzk5viLWyCflLmr6HUxzCdpwVZwJNyV/S/16wUCgUCoUCPwFy5UnWp2LbOwAAAABJRU5ErkJggg==" x="798" y="282" width="38" height="38" transform="translate(-3,2)"/>
+<text x="817" y="335" text-anchor="middle" class="tiny">四向平移</text>
+<text x="817" y="348" text-anchor="middle" class="tiny">0～3 px</text>
+
+<path d="M 840,201 L 866,225" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M 840,251 L 866,251" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M 840,301 L 866,277" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#arr)"/>
+
+<!-- Mini Shift-Robustness Curve Plot inside Architecture Diagram! -->
+<g transform="translate(876, 182)">
+  <rect x="0" y="0" width="188" height="128" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Axes -->
+  <line x1="28" y1="106" x2="176" y2="106" stroke="#334155" stroke-width="1.2"/>
+  <line x1="28" y1="16" x2="28" y2="106" stroke="#334155" stroke-width="1.2"/>
+  <!-- Gridlines -->
+  <line x1="28" y1="36" x2="176" y2="36" stroke="#E2E8F0" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <line x1="28" y1="68" x2="176" y2="68" stroke="#E2E8F0" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <!-- Affine CNN curve (99.4 -> 99.4 -> 99.25 -> 98.87) stays high! -->
+  <path d="M 38,24 L 82,25 L 126,28 L 166,34" fill="none" stroke="#2A7B6F" stroke-width="2.4"/>
+  <circle cx="38" cy="24" r="3" fill="#2A7B6F"/><circle cx="82" cy="25" r="3" fill="#2A7B6F"/>
+  <circle cx="126" cy="28" r="3" fill="#2A7B6F"/><circle cx="166" cy="34" r="3" fill="#2A7B6F"/>
+  <!-- Plain CNN curve (99.45 -> 99.12 -> 97.72 -> 92.20) drops sharply! -->
+  <path d="M 38,24 L 82,29 L 126,46 L 166,94" fill="none" stroke="#94A3B8" stroke-width="2.2" stroke-dasharray="4,2"/>
+  <circle cx="38" cy="24" r="2.8" fill="#64748B"/><circle cx="82" cy="29" r="2.8" fill="#64748B"/>
+  <circle cx="126" cy="46" r="2.8" fill="#64748B"/><circle cx="166" cy="94" r="2.8" fill="#64748B"/>
+  <!-- Labels -->
+  <text x="164" y="26" text-anchor="end" class="tiny" style="fill:#1B5E53;font-weight:700;">增强 98.87%</text>
+  <text x="162" y="102" text-anchor="end" class="tiny" style="fill:#64748B;">原CNN 92.20%</text>
+  <text x="102" y="121" text-anchor="middle" class="tiny">平移幅度 (0 → 3 px)</text>
+  <text x="14" y="64" text-anchor="middle" class="tiny" transform="rotate(-90 14 64)">验证准确率</text>
+</g>
+
+<!-- Final Output Badge -->
+<path d="M 1068,246 L 1090,246" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="1095" y="218" width="48" height="56" rx="10" fill="#93A8C8" stroke="#334155" stroke-width="1.5"/>
+<text x="1119" y="246" text-anchor="middle" style="font-size:20px;font-weight:800;fill:#FFFFFF;">5</text>
+<text x="1119" y="265" text-anchor="middle" class="tiny" style="fill:#F8FAFC;">单视图</text>
+
+<text x="968" y="336" text-anchor="middle" class="sub" style="font-weight:700;fill:#1B5E53;">验证选中：仿射增强 + 单视图 (view_mix=0)</text>
+<text x="968" y="355" text-anchor="middle" class="tiny">三种子测试均值 99.52% → 99.60% · 3px 平移高出 +6.67pp</text>
+</svg>
