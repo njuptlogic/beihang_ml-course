@@ -1,0 +1,16 @@
+{
+  "started": "2026-11-21T18:06:58.531762+08:00",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "driver": "566.14",
+  "completed": "2026-11-21T18:07:53.407186+08:00",
+  "invocation_seconds": 54.480741407001915,
+  "encoder_sha256": "f433177089a681826f849f194ece3bb48f4d63fb38d32fc837e3dc7a4e5641fb",
+  "images": 1889,
+  "views": 3,
+  "fit": 1393,
+  "heldout_folds": 4,
+  "configuration_sha256": "c9bdd1bc2e75b1e655332f25014a1327aad783398cb6b6d455810d28f9cf5eaa",
+  "fit_backend": "CPU float64 ridge after CUDA encoder"
+}

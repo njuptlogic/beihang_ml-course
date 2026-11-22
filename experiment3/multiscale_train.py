@@ -145,7 +145,7 @@ class Head(nn.Module):
         return d
 
 
-def context(fit, labels):
+def context(fit, labels, output=OUT):
     features = np.load(MID / "cls.npy")
     mean = features[fit].mean(0)
     x = (features[fit] - mean).astype("float64")
@@ -156,14 +156,14 @@ def context(fit, labels):
     c = (features - mean) @ mat
     low = F.interpolate(labels[fit], size=OUTPUT_GRID, mode="area")
     prior = density(low).mean(0).reshape(1, 1, *OUTPUT_GRID)
-    with tempfile.NamedTemporaryFile(dir=OUT, suffix=".npz", delete=False) as tmp:
+    with tempfile.NamedTemporaryFile(dir=output, suffix=".npz", delete=False) as tmp:
         np.savez(tmp, cls_mean=mean, cls_matrix=mat, prior=prior.numpy(), fit=fit)
-    Path(tmp.name).replace(OUT / "basis.npz")
+    Path(tmp.name).replace(output / "basis.npz")
     return c, prior
 
 
 class Dataset:
-    def __init__(self, device):
+    def __init__(self, device, output=OUT):
         self.device = device
         self.meta = pd.read_csv(BASE / "data/images.csv")
         self.fit = self.meta.index[self.meta.split == "fit"].to_numpy(copy=True)
@@ -171,7 +171,7 @@ class Dataset:
         self.allids = self.meta.index.to_numpy(copy=True)
         self.gt = torch.from_numpy(np.load(BASE / "data/targets.npy"))[:, None].float()
         self.targets = F.interpolate(self.gt, size=OUTPUT_GRID, mode="area")
-        self.ctx, self.prior = context(self.fit, self.gt)
+        self.ctx, self.prior = context(self.fit, self.gt, output)
         self.prior = self.prior.to(device)
         self.features = {
             key: np.load(p, mmap_mode="r")
@@ -236,9 +236,9 @@ class Dataset:
         )
 
 
-def train(ds, arm, seed, epochs, batch):
+def train(ds, arm, seed, epochs, batch, output=OUT):
     configure(seed)
-    run = OUT / f"{arm}_{seed}"
+    run = output / f"{arm}_{seed}"
     run.mkdir(exist_ok=True)
     model = Head(arm).to(ds.device)
     opt = torch.optim.AdamW(model.parameters(), lr=0.0011, weight_decay=0.012)
@@ -330,9 +330,9 @@ def select(ds, arms, seeds):
     print("LOCKED", best, flush=True)
 
 
-def load_head(arm, seed, device):
+def load_head(arm, seed, device, output=OUT):
     ck = torch.load(
-        OUT / f"{arm}_{seed}/best.pt", map_location=device, weights_only=True
+        output / f"{arm}_{seed}/best.pt", map_location=device, weights_only=True
     )
     m = Head(arm).to(device).eval()
     m.load_state_dict(ck["model"])

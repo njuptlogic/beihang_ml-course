@@ -1,0 +1,6 @@
+module,input,parameters,counted_flops
+DINOv2,224x126,22058112,6392659968
+DINOv2,448x252,22058112,24933629952
+DINOv2,672x378,22058112,55835246592
+pyramid,one density head,40802,109093632
+dual,one density head,47079,117191936

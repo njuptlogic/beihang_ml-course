@@ -1,0 +1,15 @@
+module,input,parameters,counted_flops
+time,component,24832,
+label,component,1408,
+stem,component,5232,
+enc,component,54144,
+down,component,41568,
+mid1,component,191232,
+attn_norm,component,192,
+qkv,component,27936,
+proj,component,9312,
+mid2,component,191232,
+up,component,41520,
+dec,component,79632,
+head,component,5292,
+FlowNet,32x32 one condition,673532,134676480.0

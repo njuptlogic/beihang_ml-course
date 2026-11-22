@@ -34,9 +34,9 @@ def correction(ema, state, time, label, target, config):
     return target + config["correction_strength"] * (cond - uncond)
 
 
-def fit(name, device):
+def fit(name, device, output_root=ROOT):
     configure(SEED)
-    folder = ROOT / name
+    folder = output_root / name
     folder.mkdir(parents=True, exist_ok=True)
     model = FlowNet().to(device, memory_format=torch.channels_last)
     ema = deepcopy(model).eval().requires_grad_(False)

@@ -1,0 +1,20 @@
+{
+  "started": "2026-11-21T18:07:57.311387+08:00",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "driver": "566.14",
+  "completed": "2026-11-21T18:10:13.528392+08:00",
+  "invocation_seconds": 135.96999835799943,
+  "seed_train": 1843,
+  "seed_sample": 109,
+  "parent_sha256": "1d7ebf819add1f70f0aa7528ef79b20b4f247ced8afdf24f52e3b275226830a8",
+  "ema_checkpoint_sha256": "cf8deb3c3286ec9983aa39518995c9ecf2e46f2f3c0eda3b1fd73c0f21bc48b4",
+  "epochs": 8,
+  "starting_epoch": 44,
+  "fit": 50000,
+  "euler_steps": 4,
+  "strength": 0.35,
+  "training_reference": "stored 50k-train radial powers",
+  "test_reference": "fresh complete CIFAR-10 test RGB in Inception"
+}

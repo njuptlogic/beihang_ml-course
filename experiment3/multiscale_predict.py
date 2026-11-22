@@ -33,18 +33,18 @@ from experiment3 import perception_features as pe
 
 
 class Predictor:
-    def __init__(self, device):
+    def __init__(self, device, head_directory=OUT):
         self.device = device
         self.cfg = json.loads((OUT / "selection.json").read_text())
         self.mix = self.cfg["weights"]
         self.backbone = json.loads((OUT / "backbone_selection.json").read_text())
         self.sub = self.backbone["weights"] if "dino_selected" in self.mix else {}
         self.models = {
-            arm: [load_head(arm, s, device) for s in self.backbone["seeds"]]
+            arm: [load_head(arm, s, device, head_directory) for s in self.backbone["seeds"]]
             for arm in self.sub
             if arm != "previous"
         }
-        self.basis = dict(np.load(OUT / "basis.npz"))
+        self.basis = dict(np.load(head_directory / "basis.npz"))
         self.pca0 = dict(np.load(PREV / "pca.npz"))
         self.whiten = pca(device)
         self.anchor = (

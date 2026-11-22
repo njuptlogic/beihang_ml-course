@@ -1,0 +1,5 @@
+index,member,category,split,rank_0,rank_18,error
+1801,2-MedImage-TestSet/normal/normal_095695.jpg,normal,test,0.9585214664896583,0.9928300907527031,FP
+1790,2-MedImage-TestSet/normal/normal_094700.jpg,normal,test,0.9337890851077455,0.9596225517074184,FP
+1728,2-MedImage-TestSet/disease/disease_002786.jpg,disease,test,0.28541999679124685,0.14808772694475822,FN
+1672,2-MedImage-TestSet/disease/disease_002468.jpg,disease,test,0.21783781848715886,0.23152062761500736,FN

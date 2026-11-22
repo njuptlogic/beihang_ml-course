@@ -3,9 +3,9 @@
 | 实验 | 报告 | 实测结果 |
 |---|---|---|
 | 1 手写数字识别 | [Markdown 报告](experiment1/SY2631122徐基恒.md) · [复现](experiment1/README.md) | 三种子平均测试准确率由 99.52% 提至 99.60%。代表模型在验证图平移 3 像素时由 92.20% 提至 98.87% |
-| 2 眼底图像分类 | [Markdown 报告](experiment2/report.md) | 250 张眼底图，像素分类器的 AUROC 从 0.8528 升至 0.9296，准确率从 72.4% 升至 86.4%。同样检出 92 张患病图，正常图误报从 61 张降到 26 张 |
-| 3 人眼注视密度预测 | [Markdown 报告](experiment3/report.md) | 400 张原尺寸测试图，CC 从 0.8910 升至 0.9021，KL 从 0.2641 降至 0.2455，SIM 从 0.7504 升至 0.7606 |
-| 4 CIFAR-10 彩色图像生成 | [Markdown 报告](experiment4/report.md) | 在 10,000 张生成图对 10,000 张真实测试图的协议下，FID 从 62.06 降至 48.40，每图分支求值从 24 次降至 8 次。换一组生成噪声复测得到 48.51 |
+| 2 眼底图像分类 | [Markdown 报告](experiment2/SY2631122徐基恒.md) · [历轮实验](experiment2/report.md) | 250 张眼底图，像素分类器的 AUROC 从 0.8528 升至 0.9296，准确率从 72.4% 升至 86.4%。同样检出 92 张患病图，正常图误报从 61 张降到 26 张 |
+| 3 人眼注视密度预测 | [Markdown 报告](experiment3/SY2631122徐基恒.md) · [历轮实验](experiment3/report.md) | 400 张原尺寸测试图，CC 从 0.8910 升至 0.9021，KL 从 0.2641 降至 0.2455，SIM 从 0.7504 升至 0.7606 |
+| 4 CIFAR-10 彩色图像生成 | [Markdown 报告](experiment4/SY2631122徐基恒.md) · [历轮实验](experiment4/report.md) | 在 10,000 张生成图对 10,000 张真实测试图的协议下，FID 从 62.06 降至 48.40，每图分支求值从 24 次降至 8 次。换一组生成噪声复测得到 48.51 |
 
 [教师作业说明](../Machine-Learning-Class-Assignment26/README.md) · [三个实验的模块、论文日期与选择依据](method-origins.md) · [第三轮逐指标数据](frontier-results.csv) · [前两轮逐指标数据](research-results.csv)
 
@@ -81,7 +81,7 @@ python -m course.research_results
 
 ## 环境与数据
 
-以下命令从本项目根目录运行。本机沿用实验一的 ml-course 环境，Python 3.11、PyTorch 2.6.0+cu124、torchvision 0.21.0+cu124，训练和 Inception 评测使用 RTX 3070 Laptop GPU。全量依赖版本见[实测环境](environment-234.lock.txt)。
+以下命令从本项目根目录运行。本机沿用实验一的 ml-course 环境，Python 3.11、PyTorch 2.6.0+cu124、torchvision 0.21.0+cu124，本次报告复跑使用 NVIDIA GeForce RTX 3070 Ti Laptop GPU（8 GB），各实验的运行记录列出驱动和 CUDA 版本。全量依赖版本见[实测环境](environment-234.lock.txt)。
 
 ```bash
 cd /home/ubuntu/Documents/ml-course

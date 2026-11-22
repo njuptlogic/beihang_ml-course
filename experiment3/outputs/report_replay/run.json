@@ -1,0 +1,31 @@
+{
+  "started": "2026-11-21T18:10:16.068321+08:00",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "driver": "566.14",
+  "completed": "2026-11-21T18:17:20.286455+08:00",
+  "invocation_seconds": 424.0533555580005,
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "arms": [
+    "pyramid",
+    "dual"
+  ],
+  "epochs_per_head": 18,
+  "fit": 1360,
+  "validation": 240,
+  "teacher_sha256": "1c5fbcb8f132c7ee18b69d57a6b91b3d30318d7ccabde901011da183f3739662",
+  "inference": "Raw JPEG with freshly trained heads and original frozen encoders",
+  "weights": {
+    "dual_17": "72435b010a03e804b07566ec88e9373ba66a5f0481273ec8b8026d15c0ed15f8",
+    "dual_42": "77a3bb4e9ac51ff828aabdcc5f364fac44f2833dc14fad7e8dcc40fabc60319e",
+    "dual_73": "82d4c18499c8c89261b5ab4b87d9b2acd4e4f5e040acc9f2a158e4fc0b4c4325",
+    "pyramid_17": "650919b893a21c1cb145f9719d2ee27c38bf86dc10cd0a9cd69288efc8c9e595",
+    "pyramid_42": "ffba01aaa8e70800f46820ecbb3291b8ba9675481d84104cda157d20492b8a9b",
+    "pyramid_73": "3aeded94a4d907d8bd03d9f4911a41bab42c9a796909ce8be909bd2966427ed7"
+  }
+}
